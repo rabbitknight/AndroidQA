@@ -3,19 +3,116 @@
 [TOC]
 ## TL;DR
 1. 一共分为4大类，Java相关、Android相关、数据结构和算法、其他
-2. 同类仓库其实已经很多了，再整一个的原因是想要自己在收集和整理的地方把相关知识点过一些！
 ## 暂行细则
-1. 所有题目以5级标题####提供,类似[Q] XXXX
+1. 所有题目以4级标题<####>提供,类似[Q] XXXX
 2. 所有题目回答以[A]标记作为开始，分为A1 A2 A3 ...
 3. 优先推荐官方文档。
-4. 如果要贴图，请将原图(附带水印)至于</res/images/>目录
-5. 如果要PDF文档，请将文档，至于 </res/pdfs/>
+4. 如果要贴图，请将原图(附带水印)至于[</res/images/>](https://github.com/rabbitknight/AndroidInterview/tree/master/res/images)目录
+5. 如果要PDF文档，请将文档，至于 [</res/pdfs/>](https://github.com/rabbitknight/AndroidInterview/tree/master/res/pdfs)
+6. 等级使用 三级描述：
+![低](https://img.shields.io/badge/L-BASE-green)
+![中](https://img.shields.io/badge/L-MIDDLE-blue)
+![高](https://img.shields.io/badge/L-HARD-red)
 
 ## 清单
 ### Java相关
+<details>
+</details>
+
 ### Android相关
+<details>
+
+#### [Q] 四大组件是什么
+1. A1: Acitivity、Service、Broadcast、ContentProvider
+2. A2: [「Android」四大组件，你真的都掌握了？ - 掘金](https://juejin.im/post/5db12d926fb9a0205e766cc2)
+
+#### [Q] 四大组件的生命周期和简单用法
+1. A1: 官网必看文档
+    + Activity: [了解 Activity 生命周期](https://developer.android.com/guide/components/activities/activity-lifecycle?hl=zh-cn)
+    + Service: [服务概览](https://developer.android.com/guide/components/services?hl=zh-cn​)
+    + Boradcast: [广播概览](https://developer.android.com/guide/components/broadcasts)
+    + ContentProvider: [内容提供程序基础知识](https://developer.android.com/guide/topics/providers/content-provider-basics)
+
+#### [Q] Activity之间的通信方式
+
+#### [Q] Activity各种情况下的生命周期
+#### [Q] 横竖屏切换的时候，Activity 各种情况下的生命周期
+#### [Q] Activity与Fragment之间生命周期比较
+#### [Q] Activity上有Dialog的时候按Home键时的生命周期
+#### [Q] 两个Activity 之间跳转时必然会执行的是哪几个方法？
+#### [Q] 前台切换到后台，然后再回到前台，Activity生命周期回调方法。弹出Dialog，生命值周期回调方法。
+#### [Q] Activity的四种启动模式
+#### [Q] 对比Activity状态保存于恢复
+#### [Q] fragment各种情况下的生命周期
+#### [Q] Fragment状态保存
+#### [Q] startActivityForResult是哪个类的方法，在什么情况下使用？
+#### [Q] 如何实现Fragment的滑动？
+#### [Q] fragment之间传递数据的方式？
+#### [Q] Activity 怎么和Service 绑定？
+#### [Q] 怎么在Activity 中启动自己对应的Service？
+#### [Q] service和activity怎么进行数据交互？
+#### [Q] Service的开启方式
+#### [Q] 请描述一下Service 的生命周期
+#### [Q] 谈谈你对ContentProvider的理解
+#### [Q] 说说ContentProvider、ContentResolver、ContentObserver 之间的关系
+#### [Q] 请描述一下广播BroadcastReceiver的理解
+#### [Q] 广播的分类广播使用的方式和场景
+#### [Q] 在manifest 和代码中如何注册和使用BroadcastReceiver?
+#### [Q] 本地广播和全局广播有什么差别？
+#### [Q] BroadcastReceiver，LocalBroadcastReceiver 区别
+#### [Q] AlertDialog,popupWindow,Activity区别
+#### [Q] Application 和 Activity 的 Context 对象的区别
+#### [Q] Android属性动画特性
+#### [Q] 如何导入外部数据库?
+#### [Q] LinearLayout、RelativeLayout、FrameLayout的特性及对比，并介绍使用场景。
+#### [Q] 谈谈对接口与回调的理解回调的原理写一个回调demo
+#### [Q] 介绍下SurfView
+#### [Q] RecycleView的使用序列化的作用，以及Android两种序列化的区别
+#### [Q] 差值器
+#### [Q] 估值器
+#### [Q] Android中数据存储方式 
+#### [Q] Android动画框架实现原理
+#### [Q] Android各个版本API的区别
+#### [Q] Requestlayout，onlayout，onDraw，DrawChild区别与联系
+#### [Q] invalidate和postInvalidate的区别及使用
+#### [Q] Activity-Window-View三者的差别
+#### [Q] 谈谈对Volley的理解
+#### [Q] 如何优化自定义View低版本SDK如何实现高版本api？
+#### [Q] 描述一次网络请求的流程
+#### [Q] HttpUrlConnection 和 okhttp关系
+#### [Q] Bitmap对象的理解
+#### [Q] looper架构
+#### [Q] ActivityThread，AMS，WMS的工作原理
+#### [Q] 自定义View如何考虑机型适配
+#### [Q] 自定义View的事件
+#### [Q] AstncTask+HttpClient 与 AsyncHttpClient有什么区别？
+#### [Q] LaunchMode应用场景
+#### [Q] AsyncTask 如何使用?
+#### [Q] SpareArray原理
+#### [Q] 请介绍下ContentProvider 是如何实现数据共享的？
+#### [Q] AndroidService与Activity之间通信的几种方式
+#### [Q] IntentService原理及作用是什么？
+#### [Q] 说说Activity、Intent、Service 是什么关系
+#### [Q] ApplicationContext和ActivityContext的区别
+#### [Q] SP是进程同步的吗?有什么方法做到同步？
+#### [Q] 谈谈多线程在Android中的使用
+#### [Q] 进程和 Application 的生命周期
+#### [Q] 封装View的时候怎么知道view的大小
+#### [Q] RecycleView原理
+#### [Q] AndroidManifest的作用与理解
+
+</details>
+
+
 ### 数据结构和算法
+
+<details>
+</details>
+
 ### 其他
+
+<details>
+</details>
 
 ## Thanks
 
