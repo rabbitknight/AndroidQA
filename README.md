@@ -327,5 +327,6 @@
 ## Thanks
 
 ## 推荐链接
-1. [最全的BAT大厂面试题整理](https://www.jianshu.com/p/c70989bd5f29)
-2. [Hencoder全系](https://hencoder.com/)
+1. [@扔物线:Hencoder全系](https://hencoder.com/)
+2. [@Gityuan:Android 操作系统架构](http://gityuan.com/android/)
+3. [最全的BAT大厂面试题整理](https://www.jianshu.com/p/c70989bd5f29)
