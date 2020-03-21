@@ -14,17 +14,21 @@
 2. 所有题目回答以[A]标记作为开始，分为A1 A2 A3 ...
 3. 如果要贴图，请将原图(附带水印)至于[</res/images/>](https://github.com/rabbitknight/AndroidInterview/tree/master/res/images)目录
 4. 如果要PDF文档，请将文档，至于 [</res/pdfs/>](https://github.com/rabbitknight/AndroidInterview/tree/master/res/pdfs)
-5. 等级使用 三级描述：
-![低](https://img.shields.io/badge/level-BASE-green)
-![中](https://img.shields.io/badge/level-MIDDLE-blue)
-![高](https://img.shields.io/badge/level-HARD-red)
+5. 等级标识 三级描述：
+
+标识 | 说明
+--- | ---
+![低](https://img.shields.io/badge/level-BASE-green) | 低 
+![中](https://img.shields.io/badge/level-MIDDLE-blue) | 中 
+![高](https://img.shields.io/badge/level-HARD-red) | 高 
+
 6. 特殊标识：
 
 标识|说明
 ---|---
-官方文档 |![推荐-官方](https://img.shields.io/badge/rating-官方-orange)
-等级推荐 | ![推荐-XXXX](https://img.shields.io/badge/rating-XXX-orange)
-不推荐 | ![不推荐](https://img.shields.io/badge/rating-不推荐-RED)
+![推荐-官方](https://img.shields.io/badge/rating-官方-orange) | 官方文档
+![推荐-XXXX](https://img.shields.io/badge/rating-XXX-orange) | 等级推荐
+![不推荐](https://img.shields.io/badge/rating-不推荐-RED) | 不推荐
 
 
 ## 清单
@@ -71,7 +75,7 @@
     + A 里面激活B 组件的时候, A会调用onPause()方法,然后B调用onCreate() ,onStart(), onResume()。B覆盖了A的窗体, A会调用onStop()方法。
     + B是个透明的窗口,或者是对话框的样式, 就不会调用A的onStop()方法。
     + B已经存在于Activity栈中，B就不会调用onCreate()方法。
-2. A2: 两个Activity之间跳转时必然会执行的是哪几个方法？](https://blog.csdn.net/m_xiaoer/article/details/72881082)
+2. A2: [两个Activity之间跳转时必然会执行的是哪几个方法？](https://blog.csdn.net/m_xiaoer/article/details/72881082)
 
 #### [Q] 前台切换到后台，然后再回到前台，Activity生命周期回调方法。弹出Dialog，生命值周期回调方法。
 1. A1: [前台切换到后台，然后再回到前台，Activity生命周期回调方法](https://blog.csdn.net/yz_cfm/article/details/85476263)
