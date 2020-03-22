@@ -34,6 +34,31 @@
 ## 清单
 ### Java相关
 <details>
+
+#### [Q] java中==和equals和hashCode的区别
+#### [Q] int、char、long各占多少字节数
+#### [Q] int与integer的区别
+#### [Q] 谈谈对java多态的理解
+#### [Q] String、StringBuffer、StringBuilder区别
+#### [Q] 什么是内部类？内部类的作用
+#### [Q] 抽象类和接口区别
+#### [Q] 抽象类的意义
+#### [Q] 抽象类与接口的应用场景
+#### [Q] 抽象类是否可以没有方法和属性？
+#### [Q] 接口的意义
+#### [Q] 泛型中extends和super的区别
+#### [Q] 父类的静态方法能否被子类重写
+#### [Q] 进程和线程的区别
+#### [Q] final，finally，finalize的区别
+#### [Q] 序列化的方式
+#### [Q] Serializable 和Parcelable 的区别
+#### [Q] 静态属性和静态方法是否可以被继承？是否可以被重写？以及原因？
+#### [Q] 静态内部类的设计意图
+#### [Q] 成员内部类、静态内部类、局部内部类和匿名内部类的理解，以及项目中的应用
+#### [Q] 谈谈对kotlin的理解
+#### [Q] 闭包和局部内部类的区别
+#### [Q] string 转换成 integer的方式及原理
+
 </details>
 
 ### Android相关
@@ -300,6 +325,72 @@
 
 #### [Q] 如何提升Activity开启速度
 1. A1: [提升进入界面的速度](https://zmywly8866.github.io/2015/09/28/promote-enter-activity-speed.html)
+
+#### [Q] Handler机制和底层实现
+#### [Q] Handler、Thread和HandlerThread的差别
+#### [Q] handler发消息给子线程，looper怎么启动？
+#### [Q] 关于Handler，在任何地方new Handler 都是什么线程下?
+#### [Q] ThreadLocal原理，实现及如何保证Local属性？
+#### [Q] 请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系
+#### [Q] 请描述一下View事件传递分发机制
+#### [Q] Touch事件传递流程
+#### [Q] 事件分发中的onTouch 和onTouchEvent 有什么区别，又该如何使用？
+#### [Q] View和ViewGroup分别有哪些事件分发相关的回调方法
+#### [Q] View刷新机制
+#### [Q] View绘制流程
+#### [Q] 自定义控件原理
+#### [Q] 自定义View如何提供获取View属性的接口？
+#### [Q] Android代码中实现WAP方式联网
+#### [Q] AsyncTask机制
+#### [Q] AsyncTask原理及不足
+#### [Q] 如何取消AsyncTask？
+#### [Q] 为什么不能在子线程更新UI？
+#### [Q] ANR产生的原因是什么？
+#### [Q] ANR定位和修正
+#### [Q] oom是什么？
+#### [Q] 什么情况导致oom？
+#### [Q] 有什么解决方法可以避免OOM？
+#### [Q] Oom 是否可以try catch？为什么？
+#### [Q] 内存泄漏是什么？
+#### [Q] 什么情况导致内存泄漏？
+#### [Q] 如何防止线程的内存泄漏？
+#### [Q] 内存泄露场的解决方法
+#### [Q] 内存泄漏和内存溢出区别？
+#### [Q] LruCache默认缓存大小
+#### [Q] ContentProvider的权限管理(解答：读写分离，权限控制-精确到表级，URL控制)
+#### [Q] 如何通过广播拦截和abort一条短信？
+#### [Q] 广播是否可以请求网络？
+#### [Q] 广播引起anr的时间限制是多少？
+#### [Q] 计算一个view的嵌套层级
+#### [Q] Activity栈
+#### [Q] Android线程有没有上限？
+#### [Q] 线程池有没有上限？
+#### [Q] ListView重用的是什么？
+#### [Q] Android为什么引入Parcelable？
+#### [Q] 有没有尝试简化Parcelable的使用？
+#### [Q] （四）开发中常见的一些问题
+#### [Q] ListView 中图片错位的问题是如何产生的?
+#### [Q] 混合开发有了解吗？
+#### [Q] 知道哪些混合开发的方式？说出它们的优缺点和各自使用场景？（解答：比如:RN，weex，H5，小程序，WPA等。做Android的了解一些前#### [Q] 端js等还是很有好处的)；
+#### [Q] 屏幕适配的处理技巧都有哪些?
+#### [Q] 服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？
+#### [Q] 动态布局的理解
+#### [Q] 怎么去除重复代码？
+#### [Q] 画出 Android 的大体架构图
+#### [Q] Recycleview和ListView的区别
+#### [Q] ListView图片加载错乱的原理和解决方案
+#### [Q] 动态权限适配方案，权限组的概念
+#### [Q] Android系统为什么会设计ContentProvider？
+#### [Q] 下拉状态栏是不是影响activity的生命周期
+#### [Q] 如果在onStop的时候做了网络请求，onResume的时候怎么恢复？
+#### [Q] Bitmap 使用时候注意什么？
+#### [Q] Bitmap的recycler()
+#### [Q] Android中开启摄像头的主要步骤
+#### [Q] ViewPager使用细节，如何设置成每次只初始化当前的Fragment，其他的不初始化？
+#### [Q] 点击事件被拦截，但是想传到下面的View，如何操作？
+#### [Q] 微信主页面的实现方式
+#### [Q] 微信上消息小红点的原理
+#### [Q] CAS介绍（这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介）
 </details>
 
 
