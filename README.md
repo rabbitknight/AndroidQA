@@ -243,9 +243,6 @@
 2. A2: [彻底理解Bitmap的高效加载策略](https://www.jianshu.com/p/5f02db4a225d)
 3. A3: [Android O Bitmap 内存分配](https://www.cnblogs.com/xiaji5572/p/7794083.html)
 
-#### [Q] looper架构
-1. 推荐@Gityuan大佬的全系文章: [Android消息机制1-Handler(Java层)](http://gityuan.com/2015/12/26/handler-message-framework/)
-
 #### [Q] ActivityThread，AMS，WMS的工作原理
 0. 关于Android底层实现，全系推荐[gityuan](http://gityuan.com/)的文章，其他杂七杂八的先省略了！
 1. A1: [理解Application创建过程](http://gityuan.com/2017/04/02/android-application/)
@@ -326,27 +323,75 @@
 #### [Q] 如何提升Activity开启速度
 1. A1: [提升进入界面的速度](https://zmywly8866.github.io/2015/09/28/promote-enter-activity-speed.html)
 
-#### [Q] Handler机制和底层实现
+#### [Q] Handler机制和底层实现 looper架构
+1. A1: 推荐@Gityuan大佬的全系文章
+    + [Android消息机制1-Handler(Java层)](http://gityuan.com/2015/12/26/handler-message-framework/)
+    + [Android消息机制2-Handler(Native层)](http://gityuan.com/2015/12/27/handler-message-native/)
+
 #### [Q] Handler、Thread和HandlerThread的差别
-#### [Q] handler发消息给子线程，looper怎么启动？
+1. A1: [Handler、Thread、HandlerThread三者的区别](https://blog.csdn.net/weixin_41101173/article/details/79687313)
+
+#### [Q] Handler发消息给子线程，looper怎么启动？
+1. A1: 感觉这问题 问的 没头没脑
+1. A2: [Android-Interview/bak/resources/sourcefile/深入知识点3中高级/消息队列/-203-handler发消息给子线程，looper怎么启动.md](https://github.com/android-exchange/Android-Interview/blob/master/bak/resources/sourcefile/%E6%B7%B1%E5%85%A5%E7%9F%A5%E8%AF%86%E7%82%B93%E4%B8%AD%E9%AB%98%E7%BA%A7/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/-203-handler%E5%8F%91%E6%B6%88%E6%81%AF%E7%BB%99%E5%AD%90%E7%BA%BF%E7%A8%8B%EF%BC%8Clooper%E6%80%8E%E4%B9%88%E5%90%AF%E5%8A%A8.md)
+
 #### [Q] 关于Handler，在任何地方new Handler 都是什么线程下?
+1. A0: 看一下Handler的构造方法即可获得答案。
+2. A1: [android在线程中创建handler应注意什么](https://github.com/android-cn/android-discuss/issues/44)
+
 #### [Q] ThreadLocal原理，实现及如何保证Local属性？
+1. A1: 问题搜索N篇都是这老哥答案。[ThreadLocal原理，实现及如何保证Local属性](https://blog.csdn.net/github_37130188/article/details/89483246)
+
 #### [Q] 请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系
-#### [Q] 请描述一下View事件传递分发机制
-#### [Q] Touch事件传递流程
+1. A1: 了解下Handler机制即可[Message、Handler、Message Queue、Looper之间的关系](https://www.jianshu.com/p/352877cd61c1)
+#### [Q] 请描述一下View事件传递分发机制 Touch事件传递流程
+1. A1: [Android事件分发机制](http://gityuan.com/2015/09/19/android-touch/)
+2. A2: [Android事件分发机制——从基础深入源码解析](https://www.jianshu.com/p/e6ceb7f767d8)
+
 #### [Q] 事件分发中的onTouch 和onTouchEvent 有什么区别，又该如何使用？
+1. A1: [事件处理之onTouchEvent()和onTouch()方法精炼详解](https://blog.csdn.net/weixin_41101173/article/details/80460632)
+2. A2: [android onTouch()与onTouchEvent()的区别](https://blog.csdn.net/guyuealian/article/details/51637033)
+3. A3: [事件分发中的onTouch 和onTouchEvent 有什么区别?](https://qqabby.github.io/2019/01/21/事件分发中的onTouch-和onTouchEvent-有什么区别/)
+
 #### [Q] View和ViewGroup分别有哪些事件分发相关的回调方法
+1. A1: [View & ViewGroup 之 事件分发](https://blog.csdn.net/crazy1235/article/details/70767884)
+2. A2: [View和ViewGroup分别有哪些事件分发相关的回调方法](https://blog.csdn.net/github_37130188/article/details/89112835)
+
 #### [Q] View刷新机制
+1. A1: [Android 屏幕刷新机制](https://www.jianshu.com/p/0d00cb85fdf3)
+2. A2: [Android View刷新机制](https://blog.csdn.net/chenzhiqin20/article/details/8628952)
 #### [Q] View绘制流程
+1. A1: [深入理解Android之View的绘制流程](https://www.jianshu.com/p/060b5f68da79)
+
 #### [Q] 自定义控件原理
+1. A1: [【Android】自定义控件之View原理与使用](https://www.jianshu.com/p/a3014f8442b0)
+
 #### [Q] 自定义View如何提供获取View属性的接口？
+1. A1: [Android自定义View属性，使用或获取自定义View属性，获取View默认属性](https://blog.csdn.net/ShareUs/article/details/85879789)
+
 #### [Q] Android代码中实现WAP方式联网
+1. A0: 不懂就问：什么场景会用到这个？
+2. A1: [Android代码中实现WAP方式联网](https://blog.csdn.net/asce1885/article/details/7844159)
+
 #### [Q] AsyncTask机制
+1. A0: [【Android】AsyncTask机制](https://www.cnblogs.com/milovetingting/p/10643742.html)
+
 #### [Q] AsyncTask原理及不足
+1. A1: [Android 多线程：AsyncTask的原理 及其源码分析](https://www.jianshu.com/p/37502bbbb25a)
+2. A2: [AsyncTask的缺陷和问题](https://blog.csdn.net/goodlixueyong/article/details/45895997)
+
 #### [Q] 如何取消AsyncTask？
+1. A1: [Android多线程-AsyncTask的使用和问题(取消，并行和串行，屏幕切换)](https://blog.csdn.net/qq_25806863/article/details/72782050)
+2. A2: [【Android基础】AsyncTask学习——如何取消掉AsyncTask](https://blog.csdn.net/zgljl2012/article/details/47258301)
+
 #### [Q] 为什么不能在子线程更新UI？
+1. A1: [android子线程不能更新UI？](https://blog.csdn.net/qingchunweiliang/article/details/84727465)
+
 #### [Q] ANR产生的原因是什么？
+1. A1: [ANR产生的原因及定位分析](https://juejin.im/entry/597026806fb9a06bcb7fc660)
+
 #### [Q] ANR定位和修正
+1. A1: [五、ANR产生的原因及其定位分析](https://www.jianshu.com/p/b015cb71e059)
 #### [Q] oom是什么？
 #### [Q] 什么情况导致oom？
 #### [Q] 有什么解决方法可以避免OOM？
