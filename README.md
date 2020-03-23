@@ -59,7 +59,18 @@
 #### [Q] 谈谈对kotlin的理解
 #### [Q] 闭包和局部内部类的区别
 #### [Q] string 转换成 integer的方式及原理
-
+#### [Q] TCP的3次握手和四次挥手
+#### [Q] TCP与UDP的区别
+#### [Q] TCP与UDP的应用
+#### [Q] HTTP协议
+#### [Q] HTTP1.0与2.0的区别
+#### [Q] HTTP报文结构
+#### [Q] HTTP与HTTPS的区别以及如何实现安全性
+#### [Q] 如何验证证书的合法性?
+#### [Q] https中哪里用了对称加密，哪里用了非对称加密，对加密算法（如RSA）等是否有了解?
+#### [Q] client如何确定自己发送的消息被server收到?
+#### [Q] 谈谈你对WebSocket的理解
+#### [Q] WebSocket与socket的区别
 </details>
 
 ### Android相关
@@ -534,6 +545,171 @@
 1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)
 2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
 
+#### [Q] 图片库对比
+1. A1: [图片加载库比较](https://juejin.im/entry/5af9aabf51882542bd69d0c0)
+2. A2: [Android 库 图片库比较](https://www.jianshu.com/p/44a4ee648ab4)
+
+#### [Q] 图片库的源码分析
+1. A1: [Android：这是一份全面 & 详细的图片加载库Glide源码分析](https://juejin.im/post/5ab061236fb9a028c979e043)
+2. A2: [Glide 源码分析解读-基于最新版Glide 4.9.0](https://www.jianshu.com/p/9bb50924d42a)
+
+#### [Q] 图片框架缓存实现
+1. A1: [Glide 系列（四） Glide缓存机制](https://www.jianshu.com/p/17644406396b)
+
+#### [Q] LRUCache原理
+1. A1: [彻底解析Android缓存机制——LruCache](https://www.jianshu.com/p/b49a111147ee)
+
+#### [Q] 图片加载原理
+1. A1: [Android图片加载库的理解](https://www.cnblogs.com/cr330326/p/5585021.html)
+
+#### [Q] 自己去实现图片库，怎么做？
+1. [如何实现一个图片加载框架](https://juejin.im/post/5bca698751882576676f606a)
+
+#### [Q] Glide源码解析
+1. A1: 
+    + [Glide源码解析(一)](https://yuqirong.me/2019/08/04/Glide%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90(%E4%B8%80)/)
+    + [Glide源码解析(二)](https://yuqirong.me/2019/08/06/Glide%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90(%E4%BA%8C)/)
+    + [Glide源码解析(三)](https://yuqirong.me/2019/08/07/Glide%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90(%E4%B8%89)/)
+
+#### [Q] Glide使用什么缓存？
+1. A1: [Glide中的缓存](https://www.jianshu.com/p/325bd2f56ca7)
+
+#### [Q] Glide内存缓存如何控制大小？
+1. A1: [Glide 这样用，更省内存！！！](https://juejin.im/post/59cf0f9e6fb9a00a4b0c73d4)
+
+#### [Q] 网络框架对比和源码分析
+1. A1: [网络框架分析 - 全是套路 | 掘金技术征文](https://juejin.im/entry/585279ac61ff4b006844f829)
+2. A2: [okhttp,retrofit,android-async-http,volley应该选择哪一个？](https://www.zhihu.com/question/35189851)
+3. A3: [Android主流网络请求开源库的对比（Android-Async-Http、Volley、OkHttp、Retrofit）](https://carson-ho.github.io/2016/08/12/%E7%BD%91%E7%BB%9C%E5%BC%80%E6%BA%90%E5%BA%93/)
+
+#### [Q] 自己去设计网络请求框架，怎么做？
+1. A1: [Android客户端HTTP网络框架设计与实践](https://ivonhoe.github.io/2018/07/08/network-architecture-design/)
+2. A2: [一步步封装实现自己的网络请求框架](https://www.imooc.com/article/283168)
+
+#### [Q] okhttp源码
+1. A1: [针对知名网络库OkHttp3的源码分析系列文章](https://github.com/avenwu/okhttp-in-action)
+
+#### [Q] 网络请求缓存处理，okhttp如何处理网络缓存的
+1. A1: [Okhttp解析（五）缓存的处理](jianshu.com/p/00d281c226f6)
+2. A2: [OkHttp 源码分析（二）—— 缓存机制](https://zhuanlan.zhihu.com/p/59765130)
+
+#### [Q] 从网络加载一个10M的图片，说下注意事项
+1. A1: [Android 大图加载](https://www.jianshu.com/p/7c81d3742c38)
+2. A2: [Android高效加载大图、多图解决方案，有效避免程序OOM](https://blog.csdn.net/guolin_blog/article/details/9316683)
+
+#### [Q] 谈谈你对安卓签名的理解。
+1. A1: [安卓应用签名机制分析](https://juejin.im/post/5c9a25fce51d455bea55fa1f)
+
+#### [Q] 请解释安卓为啥要加签名机制?
+1. A1: [为您的应用签名](https://developer.android.com/studio/publish/app-signing?hl=zh-cn)
+
+#### [Q] 视频加密传输
+1. A1: [Android视频加密那点事儿！](https://blog.csdn.net/shenshibaoma/article/details/79003854)
+
+#### [Q] App 是如何沙箱化，为什么要这么做？
+1. A1: [浅析Android沙箱模型](https://blog.csdn.net/ljheee/article/details/53191397)
+
+#### [Q] 权限管理系统（底层的权限是如何进行 grant 的）？
+1. A1: [Android动态权限管理原理（6.0及以上）](http://skyacer.github.io/2018/09/06/Android%E5%8A%A8%E6%80%81%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%8E%9F%E7%90%86%EF%BC%886-0%E5%8F%8A%E4%BB%A5%E4%B8%8A%EF%BC%89/)
+2. A2: [Android: 动态运行时权限(危险权限)源码分析、封装、及9.0权限改动](https://blog.csdn.net/qq_39969226/article/details/104188173)
+
+#### [Q] sqlite升级，增加字段的语句
+#### [Q] 数据库框架对比和源码分析
+#### [Q] 数据库的优化
+#### [Q] 数据库数据迁移问题
+#### [Q] 对热修复和插件化的理解
+#### [Q] 插件化原理分析
+#### [Q] 模块化实现（好处，原因）
+#### [Q] 热修复,插件化
+#### [Q] 项目组件化的理解
+#### [Q] 描述清点击 Android Studio 的 build 按钮后发生了什么
+#### [Q] 
+#### [Q] 谈谈你对Android设计模式的理解
+#### [Q] MVC MVP MVVM原理和区别
+#### [Q] 你所知道的设计模式有哪些？
+#### [Q] 项目中常用的设计模式
+#### [Q] 手写生产者/消费者模式
+#### [Q] 写出观察者模式的代码
+#### [Q] 适配器模式，装饰者模式，外观模式的异同？
+#### [Q] 用到的一些开源框架，介绍一个看过源码的，内部实现过程。
+#### [Q] 谈谈对RxJava的理解
+#### [Q] RxJava的功能与原理实现
+#### [Q] RxJava的作用，与平时使用的异步操作来比的优缺点
+#### [Q] 说说EventBus作用，实现方式，代替EventBus的方式
+#### [Q] 从0设计一款App整体架构，如何去做？
+#### [Q] 说一款你认为当前比较火的应用并设计(比如：直播APP，P2P金融，小视频等)
+#### [Q] 谈谈对java状态机理解
+#### [Q] Fragment如果在Adapter中使用应该如何解耦？
+#### [Q] Binder机制及底层实现
+#### [Q] 对于应用更新这块是如何做的？(解答：灰度，强制更新，分区域更新)？
+#### [Q] 实现一个Json解析器(可以通过正则提高速度)
+#### [Q] 统计启动时长,标准
+#### [Q] 如何对Android 应用进行性能分析以及优化?
+#### [Q] ddms 和 traceView
+#### [Q] 性能优化如何分析systrace？
+#### [Q] 用IDE如何分析内存泄漏？
+#### [Q] Java多线程引发的性能问题，怎么解决？
+#### [Q] 启动页白屏及黑屏解决？
+#### [Q] 启动太慢怎么解决？
+#### [Q] 怎么保证应用启动不卡顿？
+#### [Q] App启动崩溃异常捕捉
+#### [Q] 自定义View注意事项
+#### [Q] 现在下载速度很慢,试从网络协议的角度分析原因,并优化(提示：网络的5层都可以涉及)。
+#### [Q] Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）
+#### [Q] 如何保持应用的稳定性
+#### [Q] RecyclerView和ListView的性能对比
+#### [Q] ListView的优化
+#### [Q] RecycleView优化
+#### [Q] View渲染
+#### [Q] Bitmap如何处理大图，如一张30M的大图，如何预防OOM
+#### [Q] java中的四种引用的区别以及使用场景
+#### [Q] 强引用置为null，会不会被回收？
+#### [Q] 请介绍一下NDK
+#### [Q] 什么是NDK库?
+#### [Q] jni用过吗？
+#### [Q] 如何在jni中注册native函数，有几种注册方式?
+#### [Q] Java如何调用c、c++语言？
+#### [Q] jni如何调用java层代码？
+#### [Q] 进程间通信的方式？
+#### [Q] Binder机制
+#### [Q] 简述IPC？
+#### [Q] 什么是AIDL？
+#### [Q] AIDL解决了什么问题？
+#### [Q] AIDL如何使用？
+#### [Q] Android 上的 Inter-Process-Communication 跨进程通信时如何工作的？
+#### [Q] 多进程场景遇见过么？
+#### [Q] Android进程分类？
+#### [Q] 进程和 Application 的生命周期？
+#### [Q] 进程调度
+#### [Q] 谈谈对进程共享和线程安全的认识
+#### [Q] 谈谈对多进程开发的理解以及多进程应用场景
+#### [Q] 什么是协程？
+#### [Q] java虚拟机的特性
+#### [Q] 谈谈对jvm的理解
+#### [Q] JVM内存区域，开线程影响哪块内存
+#### [Q] 对Dalvik、ART虚拟机有什么了解？
+#### [Q] Art和Dalvik对比
+#### [Q] 虚拟机原理，如何自己设计一个虚拟机(内存管理，类加载，双亲委派)
+#### [Q] 谈谈你对双亲委派模型理解
+#### [Q] JVM内存模型，内存区域
+#### [Q] 类加载机制
+#### [Q] 谈谈对ClassLoader(类加载器)的理解
+#### [Q] 谈谈对动态加载（OSGI）的理解
+#### [Q] 内存对象的循环引用及避免
+#### [Q] 内存回收机制、GC回收策略、GC原理时机以及GC对象
+#### [Q] 垃圾回收机制与调用System.gc()区别
+#### [Q] Ubuntu编译安卓系统
+#### [Q] 系统启动流程是什么？（提示：Zygote进程 –> SystemServer进程 –> 各种系统服务 –> 应用进程）
+#### [Q] 大体说清一个应用程序安装到手机上时发生了什么
+#### [Q] 简述Activity启动全部过程
+#### [Q] App启动流程，从点击桌面开始
+#### [Q] 逻辑地址与物理地址，为什么使用逻辑地址？
+#### [Q] Android为每个应用程序分配的内存大小是多少？
+#### [Q] Android中进程内存的分配，能不能自己分配定额内存？
+#### [Q] 进程保活的方式
+#### [Q] 如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？
+#### [Q] App中唤醒其他进程的实现方式
+
 </details>
 
 
@@ -550,6 +726,34 @@
 1. A1: [二叉树遍历(先序、中序、后序)](https://www.jianshu.com/p/456af5480cee)
 2. A2: [二叉树遍历（前序、中序、后序、层次遍历、深度优先、广度优先）](https://blog.csdn.net/My_Jobs/article/details/43451187)
 3. A3: [通俗易懂讲解 二叉搜索树](https://zhuanlan.zhihu.com/p/29867652)
+
+#### [Q] 排序算法有哪些？
+#### [Q] 最快的排序算法是哪个？
+#### [Q] 手写一个冒泡排序
+#### [Q] 手写快速排序代码
+#### [Q] 快速排序的过程、时间复杂度、空间复杂度
+#### [Q] 手写堆排序
+#### [Q] 堆排序过程、时间复杂度及空间复杂度
+#### [Q] 写出你所知道的排序算法及时空复杂度，稳定性
+#### [Q] 二叉树给出根节点和目标节点，找出从根节点到目标节点的路径
+#### [Q] 给阿里2万多名员工按年龄排序应该选择哪个算法？
+#### [Q] GC算法(各种算法的优缺点以及应用场景)
+#### [Q] 蚁群算法与蒙特卡洛算法
+#### [Q] 子串包含问题(KMP 算法)写代码实现
+#### [Q] 一个无序，不重复数组，输出N个元素，使得N个元素的和相加为M，给出时间复杂度、空间复杂度。手写算法
+#### [Q] 万亿级别的两个URL文件A和B，如何求出A和B的差集C(提示：Bit映射->hash分组->多文件读写效率->磁盘寻址以及应用层面对寻址的优#### [Q] 化)
+#### [Q] 百度POI中如何试下查找最近的商家功能(提示：坐标镜像+R树)。
+#### [Q] 两个不重复的数组集合中，求共同的元素。
+#### [Q] 两个不重复的数组集合中，这两个集合都是海量数据，内存中放不下，怎么求共同的元素？
+#### [Q] 一个文件中有100万个整数，由空格分开，在程序中判断用户输入的整数是否在此文件中。说出最优的方法
+#### [Q] 一张Bitmap所占内存以及内存占用的计算
+#### [Q] 2000万个整数，找出第五十大的数字？
+#### [Q] 烧一根不均匀的绳，从头烧到尾总共需要1个小时。现在有若干条材质相同的绳子，问如何用烧绳的方法来计时一个小时十五分钟呢？
+#### [Q] 求1000以内的水仙花数以及40亿以内的水仙花数
+#### [Q] 5枚硬币，2正3反如何划分为两堆然后通过翻转让两堆中正面向上的硬8币和反面向上的硬币个数相同
+#### [Q] 时针走一圈，时针分针重合几次
+#### [Q] N*N的方格纸,里面有多少个正方形
+#### [Q] x个苹果，一天只能吃一个、两个、或者三个，问多少天可以吃完？
 
 </details>
 
