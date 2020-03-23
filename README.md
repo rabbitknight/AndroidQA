@@ -392,50 +392,147 @@
 
 #### [Q] ANR定位和修正
 1. A1: [五、ANR产生的原因及其定位分析](https://www.jianshu.com/p/b015cb71e059)
-#### [Q] oom是什么？
-#### [Q] 什么情况导致oom？
+#### [Q] OOM是什么？
+1. A1: [什么是OOM？如何解决OOM问题!](https://www.jianshu.com/p/41ffbf31b20c)
+#### [Q] 什么情况导致OOM？
+1. A1: [Android OOM原因总结](https://blog.csdn.net/boyupeng/article/details/47726765)
 #### [Q] 有什么解决方法可以避免OOM？
-#### [Q] Oom 是否可以try catch？为什么？
+1. A1: [Android避免OOM（内存优化）](https://www.jianshu.com/p/f5d8d3066b36)
+2. A2: [Android 初级探讨 OOM问题 以及解决优化之道](https://juejin.im/post/59cafa7351882531b21f0fba)
+
+#### [Q] OOM 是否可以try catch？为什么？
+1. A1: [OOm是否可以try catch](https://blog.csdn.net/gvvbn/article/details/79454701)
+
 #### [Q] 内存泄漏是什么？
-#### [Q] 什么情况导致内存泄漏？
+1. A1: [内存泄漏和内存溢出有啥区别？](https://www.zhihu.com/question/40560123)
+
+#### [Q] 什么情况导致内存泄漏？内存泄露场的解决方法
+1. A1: [[译]Android内存泄漏的八种可能（上）](https://www.jianshu.com/p/ac00e370f83d)
+2. A2: [[译]Android防止内存泄漏的八种方法（下）](https://www.jianshu.com/p/c5ac51d804fa)
+
 #### [Q] 如何防止线程的内存泄漏？
-#### [Q] 内存泄露场的解决方法
+1. A1: [内存泄露：Thread是如何造成内存泄露的](https://www.jianshu.com/p/f50366145b4b)
+2. A2: [Android性能优化：关于 内存泄露 的知识都在这里了](https://juejin.im/post/5afcebc3f265da0b7f44c10a)
+
 #### [Q] 内存泄漏和内存溢出区别？
+1. A1: [内存泄漏和内存溢出有啥区别？](https://www.zhihu.com/question/40560123)
+
 #### [Q] LruCache默认缓存大小
+1. A0: 需要自己指定，并重写相应方法做计算，源码中并没有规定默认多少。
+
 #### [Q] ContentProvider的权限管理(解答：读写分离，权限控制-精确到表级，URL控制)
+1. A1: [Content Provider的权限](https://www.cnblogs.com/622698abc/p/6033080.html)
+2. A2: [ContentProvider数据库共享之——读写权限与数据监听](https://blog.csdn.net/harvic880925/article/details/44651967)
+
 #### [Q] 如何通过广播拦截和abort一条短信？
+1. A1: [广播接收器(BroadcastReceiver)](https://www.jianshu.com/p/25def4ca10e2)
+2. A2: [Android的BroadcastReceiver 广播 短信拦截](https://www.cnblogs.com/chenxibobo/p/6136689.html)
+
 #### [Q] 广播是否可以请求网络？
+1. A1: onReceive回调在什么线程？[广播概览](https://developer.android.com/guide/components/broadcasts?hl=zh-cn)
+2. A2: [Android主线程里不允许网络操作](https://blog.csdn.net/thl789/article/details/10628419)
+
 #### [Q] 广播引起anr的时间限制是多少？
+1. [理解Android ANR的触发原理](http://gityuan.com/2016/07/02/android-anr/)
+2. [Android N 各种ANR的时间](https://blog.csdn.net/u013122625/article/details/74676666)
+
 #### [Q] 计算一个view的嵌套层级
+1. A1: [计算一个ViewGroup的嵌套层级](https://blog.csdn.net/zx_android/article/details/79558509)
+
 #### [Q] Activity栈
+1. A1: [Android Activity 全局管理 终极解决方案](https://blog.csdn.net/blogblj/article/details/52068457)
+
 #### [Q] Android线程有没有上限？
+1. A1: [57、Android线程有没有上限](https://blog.csdn.net/FDoubleman/article/details/98599279)
+
 #### [Q] 线程池有没有上限？
+1. A1: [线程池有没有上限](https://blog.csdn.net/github_37130188/article/details/89504500)
+
 #### [Q] ListView重用的是什么？
+1. A1: [ListView复用和优化详解](https://blog.csdn.net/u011692041/article/details/53099584)
+2. A2: [Android ListView工作原理完全解析，带你从源码的角度彻底理解](https://blog.csdn.net/guolin_blog/article/details/44996879)
+
 #### [Q] Android为什么引入Parcelable？
+1. A1: [Serializable 都这么牛逼了，Parcelable，我还要你何用？](https://juejin.im/post/5a24fd8151882531ea651c37)
+
 #### [Q] 有没有尝试简化Parcelable的使用？
-#### [Q] （四）开发中常见的一些问题
-#### [Q] ListView 中图片错位的问题是如何产生的?
+1. A0: 很多回答都是讲插件..,实际AS上实现Parcelable的类名上，使用【ALT+ENTER】快捷键即可看到【Add Parcelable Implementation】选项，选择就可以完全自动创建好。。要啥插件？？？
+1. A1: [kotlin使用Parcelize注解简化Parcelable的书写](https://juejin.im/entry/5a261a8c6fb9a0450167cf1b)
+2. A2: 还是有一些插件选择，但没必要。
+    + [Parceler](https://github.com/johncarl81/parceler)
+    + [ParcelableGenerator](https://github.com/baoyongzhang/ParcelableGenerator)
+    + [android-parcelable-intellij-plugin](https://github.com/mcharmas/android-parcelable-intellij-plugin)
+
+#### [Q] ListView 中图片错位的问题是如何产生的?ListView图片加载错乱的原理和解决方案
+1. A1: [Android ListView异步加载图片乱序问题，原因分析及解决方案](https://blog.csdn.net/guolin_blog/article/details/45586553)
+2. A2: [listview图片加载错乱的原理和解决方案](https://blog.csdn.net/lilong_19880408/article/details/78160084)
 #### [Q] 混合开发有了解吗？
-#### [Q] 知道哪些混合开发的方式？说出它们的优缺点和各自使用场景？（解答：比如:RN，weex，H5，小程序，WPA等。做Android的了解一些前#### [Q] 端js等还是很有好处的)；
+1. [混合开发 框架对比](https://www.jianshu.com/p/8e99b4aed464)
+
+#### [Q] 知道哪些混合开发的方式？说出它们的优缺点和各自使用场景？（解答：比如:RN，weex，H5，小程序，WPA等。做Android的了解一些前端js等还是很有好处的)；
+1. A0: 这坑太大了。
+
 #### [Q] 屏幕适配的处理技巧都有哪些?
+1. A1: [今日头条屏幕适配方案落地研究](https://juejin.im/post/5cf869aaf265da1b8b2b4e14)
+2. A2: [今日头条屏幕适配方案终极版正式发布!](https://juejin.im/post/5bce688e6fb9a05cf715d1c2)
+
 #### [Q] 服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？
+1. A0: 似乎没有百度到啥内容，各位答手似乎歇菜了。强答：多线程情形下可以考虑多线程同步方法，参考[LeetCode. 1114 按序打印](https://leetcode-cn.com/problems/print-in-order/),多进程的条件。。。是啥条件?文件锁?信号量?多进程同步?
+
 #### [Q] 动态布局的理解
+1. A1: [Android动态布局的实现](https://blog.csdn.net/sbl19940819/article/details/88891178?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
 #### [Q] 怎么去除重复代码？
+0. A0: 个人感觉 扯一点封装/继承/多态的OOP比较好。
+1. [Android-Interview/bak/resources/sourcefile/深入知识点3中高级/性能优化/-105-怎么去除重复代码.md](https://github.com/android-exchange/Android-Interview/blob/master/bak/resources/sourcefile/%E6%B7%B1%E5%85%A5%E7%9F%A5%E8%AF%86%E7%82%B93%E4%B8%AD%E9%AB%98%E7%BA%A7/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/-105-%E6%80%8E%E4%B9%88%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E4%BB%A3%E7%A0%81.md)
+
 #### [Q] 画出 Android 的大体架构图
-#### [Q] Recycleview和ListView的区别
-#### [Q] ListView图片加载错乱的原理和解决方案
+1. A1: Gityuan开篇俩张图，别的不用。[Android 操作系统架构开篇](http://gityuan.com/android/)
+2. A2: 官方图。[平台架构](https://developer.android.com/guide/platform?hl=zh-cn)
+
 #### [Q] 动态权限适配方案，权限组的概念
+1. A1: 官方 [Permissions overview](https://developer.android.com/guide/topics/permissions/overview?hl=zh-cn)
+2. A2: [Android动态权限总结](https://juejin.im/post/5bdd25386fb9a049b13da206)
+
 #### [Q] Android系统为什么会设计ContentProvider？
+1. A1: [Android系统为什么会设计ContentProvider](https://blog.csdn.net/github_37130188/article/details/89648175)
+
 #### [Q] 下拉状态栏是不是影响activity的生命周期
+1. A1: [Android 下拉通知栏时Activity的生命周期——重新理解onPause()](https://www.jianshu.com/p/781bc86f8042)
+
 #### [Q] 如果在onStop的时候做了网络请求，onResume的时候怎么恢复？
+1. A0: 问题没头没脑，不回答。
+
 #### [Q] Bitmap 使用时候注意什么？
-#### [Q] Bitmap的recycler()
+1. A1: [Bitmap 使用时候注意什么？](https://www.jianshu.com/p/fbf5a310788c)
+
+#### [Q] Bitmap的recycle()
+1. A1: [Android中有没有必要调用Bitmap的recycle()](https://www.jianshu.com/p/b84b1b5f2fe9)
+
 #### [Q] Android中开启摄像头的主要步骤
+1. A0: 前置步骤是申请权限，后面分为Camera，Camera2
+2. A1: [Android 相机1 之Camera1的最简单的使用（预览、拍照、变焦、特效）](https://blog.csdn.net/Lingbulei/article/details/81280094)
+3. A2: [Android Camera-Camera2使用](https://juejin.im/post/5e425a386fb9a07cc32135e1)
+4. A3: [Android短视频中如何实现720P磨皮美颜录制？](http://yunxin.163.com/blog/video17-0905/)
+
 #### [Q] ViewPager使用细节，如何设置成每次只初始化当前的Fragment，其他的不初始化？
+1. A1: [ViewPager懒加载极致优化](https://juejin.im/post/5d37bb8df265da1b8b2ba01a)
+
 #### [Q] 点击事件被拦截，但是想传到下面的View，如何操作？
+1. A1: [点击事件被拦截，但是想传到下面的View，如何操作](https://blog.csdn.net/github_37130188/article/details/89684468)
+
 #### [Q] 微信主页面的实现方式
+0. A0: 讲个笑话:给我写个APP就照着微信抄一下。
+1. A1: [Android:TabLayout+ViewPager+Fragment实现底部导航](https://blog.csdn.net/ruancw/article/details/80494503)
+
 #### [Q] 微信上消息小红点的原理
-#### [Q] CAS介绍（这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介）
+0. A0: 小红点UI实现很简单，关键在于UI怎么和消息绑定。后面又可以引申出长连接。
+1. A1: [简单实现消息提示(小红点)](https://blog.csdn.net/qq_28268507/article/details/70314844)
+
+#### [Q] CAS介绍。
+1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)
+2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
+
 </details>
 
 
