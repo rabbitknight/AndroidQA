@@ -614,31 +614,85 @@
 2. A2: [Android: 动态运行时权限(危险权限)源码分析、封装、及9.0权限改动](https://blog.csdn.net/qq_39969226/article/details/104188173)
 
 #### [Q] sqlite升级，增加字段的语句
+1. A1: [android sqlit数据库升级，添加字段](https://blog.csdn.net/mafei852213034/article/details/55096032)
+2. A2: [Sqlite升级时向已有表中增加字段](https://blog.csdn.net/qq_26287435/article/details/82585597)
+
 #### [Q] 数据库框架对比和源码分析
+1. A1: [ORM数据库框架 SQLite 常用数据库框架比较 MD](https://www.cnblogs.com/baiqiantao/p/9492180.html)
+
 #### [Q] 数据库的优化
+1. A1: [android数据库优化](https://www.jianshu.com/p/3b4452fc1bbd)
+
 #### [Q] 数据库数据迁移问题
+1. A1: [Android 数据库综述（一） 数据库片的升级与数据的迁移操作](https://juejin.im/post/59e7e5856fb9a0451542fb19)
+
 #### [Q] 对热修复和插件化的理解
-#### [Q] 插件化原理分析
+1. A1: [2020 Android 大厂面试（五）插件化、模块化、组件化、热修复、增量更新、Gradle](https://juejin.im/post/5dd274515188254c6443815e)
+2. 
+#### [Q] 插件化原理分析 热修复,插件化
+1. A1: 
+    + [Android 插件化原理解析——概要](http://weishu.me/2016/01/28/understand-plugin-framework-overview/)
+    + [Android 插件化原理解析——Hook机制之Binder Hook](http://weishu.me/2016/02/16/understand-plugin-framework-binder-hook/)
+    + [Android 插件化原理解析——Hook机制之AMS&PMS](http://weishu.me/2016/03/07/understand-plugin-framework-ams-pms-hook/)
+    + [Android 插件化原理解析——Activity生命周期管理](http://weishu.me/2016/03/21/understand-plugin-framework-activity-management/)
+    + [Android 插件化原理解析——插件加载机制](http://weishu.me/2016/04/05/understand-plugin-framework-classloader/)
+    + [Android 插件化原理解析——广播的管理](http://weishu.me/2016/04/12/understand-plugin-framework-receiver/)
+    + [Android 插件化原理解析——Service的插件化](http://weishu.me/2016/05/11/understand-plugin-framework-service/)
+    + [Android 插件化原理解析——ContentProvider的插件化](http://weishu.me/2016/07/12/understand-plugin-framework-content-provider/)
+2. A2: [腾讯零反射全动态Android插件框架Shadow解析](https://juejin.im/post/5d0ed3b46fb9a07ef63fe730)
+3. A3: [Android 插件化和热修复知识梳理](https://www.jianshu.com/p/704cac3eb13d)
+
 #### [Q] 模块化实现（好处，原因）
-#### [Q] 热修复,插件化
+1. A1: [关于Android模块化你需要知道的](https://juejin.im/post/5ac42a356fb9a028cf32acaf)
+2. A2: [Android 模块化探索与实践](https://zhuanlan.zhihu.com/p/26744821)
+
 #### [Q] 项目组件化的理解
+1. A1: [谈谈我的理解-组件化/模块化](https://www.jianshu.com/p/79e4df63f31f)
+
 #### [Q] 描述清点击 Android Studio 的 build 按钮后发生了什么
-#### [Q] 
+1. A1: [在 AndroidStudio 工程点击 Run 按钮， 实际上做了什么操作呢？](https://www.zhihu.com/question/65289196)
+2. A2: [10分钟了解Android项目构建流程](https://juejin.im/post/5a69c0ccf265da3e2a0dc9aa)
+
 #### [Q] 谈谈你对Android设计模式的理解
+1. A1: [谈谈23种设计模式在Android源码及项目中的应用](https://www.jianshu.com/p/b2d62447c9ea)
+
 #### [Q] MVC MVP MVVM原理和区别
-#### [Q] 你所知道的设计模式有哪些？
-#### [Q] 项目中常用的设计模式
+1. A1: [MVC，MVP 和 MVVM 的图示](https://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)
+2. A2: [Clean Architecture - 清晰简洁的Android 应用架构](https://www.jianshu.com/p/3edcf85539a6)
+3. A3: [Android构架系列之二--MVP&&Clean理解与实践之MVP](https://limuzhi.com/2016/05/02/Android%E6%9E%84%E6%9E%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BA%8C-MVP&&Clean%E7%90%86%E8%A7%A3%E4%B8%8E%E5%AE%9E%E8%B7%B5%E4%B9%8BMVP/)
+
+#### [Q] 你所知道的设计模式有哪些？项目中常用的设计模式
+1. A1: [从Android代码中来记忆23种设计模式](https://www.jianshu.com/p/1a9f571ad7c0)
+2. A2: [有哪些在实际 Android 项目中用到的设计模式？](https://www.zhihu.com/question/29575295)
+
 #### [Q] 手写生产者/消费者模式
+1. A1: [Java 生产者消费者实现 —— BlockingQueue](https://www.jianshu.com/p/a42b89287359)
+
 #### [Q] 写出观察者模式的代码
+1. A1: [基于Java的设计模式-观察者模式](https://panlf.github.io/2018/03/31/%E5%9F%BA%E4%BA%8EJava%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/)
+
 #### [Q] 适配器模式，装饰者模式，外观模式的异同？
+1. A1: [装饰器模式、代理模式、适配器模式和外观模式的联系与区别](https://www.jianshu.com/p/62799da46ac6)
+
 #### [Q] 用到的一些开源框架，介绍一个看过源码的，内部实现过程。
+1. A1: Glide源码分析.
+2. A2: ButterKnife源码分析.
+3. A3: EventBus源码分析.
+    + [一文彻底搞懂EventBus 3.0原理](https://juejin.im/post/5da97188e51d4524a21c481f)
 #### [Q] 谈谈对RxJava的理解
 #### [Q] RxJava的功能与原理实现
 #### [Q] RxJava的作用，与平时使用的异步操作来比的优缺点
 #### [Q] 说说EventBus作用，实现方式，代替EventBus的方式
+1. A1: [用LiveDataBus替代RxBus、EventBus——Android消息总线的演进之路](https://juejin.im/post/5b5ac0825188251acd0f3777)
+2. A2: [greenrobot/EventBus](https://github.com/greenrobot/EventBus)
 #### [Q] 从0设计一款App整体架构，如何去做？
+1. A1: [Android项目开发如何设计整体架构？](https://www.zhihu.com/question/45517397)
+
 #### [Q] 说一款你认为当前比较火的应用并设计(比如：直播APP，P2P金融，小视频等)
 #### [Q] 谈谈对java状态机理解
+1. A1: [状态机思维](http://blog.maihaoche.com/zhuang-tai-ji-si-wei/)
+2. A2: [深入浅出理解有限状态机](https://www.jianshu.com/p/5eb45c64f3e3)
+
 #### [Q] Fragment如果在Adapter中使用应该如何解耦？
 #### [Q] Binder机制及底层实现
 #### [Q] 对于应用更新这块是如何做的？(解答：灰度，强制更新，分区域更新)？
