@@ -694,9 +694,17 @@
 2. A2: [深入浅出理解有限状态机](https://www.jianshu.com/p/5eb45c64f3e3)
 
 #### [Q] Fragment如果在Adapter中使用应该如何解耦？
+
 #### [Q] Binder机制及底层实现
+1. A1: [Binder系列—开篇](http://gityuan.com/2015/10/31/binder-prepare/)
+ 
 #### [Q] 对于应用更新这块是如何做的？(解答：灰度，强制更新，分区域更新)？
+1. A1: [MS(5)：android之进阶篇](https://www.jianshu.com/p/e8a4d65ea2d9)
+2. A2: [https://blog.csdn.net/ddnosh/article/details/100091866](https://blog.csdn.net/ddnosh/article/details/100091866)
 #### [Q] 实现一个Json解析器(可以通过正则提高速度)
+1. A1: [半小时实现一个 JSON 解析器](https://zhuanlan.zhihu.com/p/28049617)
+2. A2: [JSON Parser](http://0x100.club/projects/json-parser.html)
+
 #### [Q] 统计启动时长,标准
 #### [Q] 如何对Android 应用进行性能分析以及优化?
 #### [Q] ddms 和 traceView
