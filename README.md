@@ -706,11 +706,22 @@
 2. A2: [JSON Parser](http://0x100.club/projects/json-parser.html)
 
 #### [Q] 统计启动时长,标准
+1. A1: [Android 开发之 App 启动时间统计](https://www.jianshu.com/p/c967653a9468)
+
 #### [Q] 如何对Android 应用进行性能分析以及优化?
+1. A1: [Android性能优化全方面解析](https://juejin.im/post/5a0d30e151882546d71ee49e)
+
 #### [Q] ddms 和 traceView
+1. A1: [利用 Android Profiler 测量应用性能](https://developer.android.com/studio/profile/android-profiler?hl=zh-cn)
+
 #### [Q] 性能优化如何分析systrace？
+1. A1: [Systrace 概览](https://developer.android.com/studio/profile/systrace.html)
+2. A2: [使用Systrace分析UI性能](https://www.jianshu.com/p/b492140a555f)
+
 #### [Q] 用IDE如何分析内存泄漏？
+1. A1: [使用Android Studio和MAT进行内存泄漏分析](https://zhuanlan.zhihu.com/p/27593816)
 #### [Q] Java多线程引发的性能问题，怎么解决？
+1. A1: [Android性能优化典范之多线程篇](https://juejin.im/entry/59f82808f265da43346f36fd)
 #### [Q] 启动页白屏及黑屏解决？
 #### [Q] 启动太慢怎么解决？
 #### [Q] 怎么保证应用启动不卡顿？
