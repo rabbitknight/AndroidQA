@@ -741,17 +741,32 @@
 2. A2: [自定义视图组件](https://developer.android.com/guide/topics/ui/custom-components?hl=zh-cn)
 
 #### [Q] 现在下载速度很慢,试从网络协议的角度分析原因,并优化(提示：网络的5层都可以涉及)。
+
+#### [Q] Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）
 1. A1: [弱网优化在支付宝的深度实践 | mPaaS 线下沙龙 CodeDay#1 分享实录](https://juejin.im/post/5ca5c174f265da30cc7919d1)
 2. A2: 百度弱网优化
     + [百度 App 网络深度优化系列（一）：DNS 优化](https://www.infoq.cn/article/3QZ0o9Nmv*O0LoEPVRkN)
     + [百度 App 网络深度优化系列（二）：连接优化](https://www.infoq.cn/article/CDaih849Ao4rS_pctQ2T)
     + [百度 App 网络深度优化系列（三）：弱网优化](https://www.infoq.cn/article/pQmLUECekW*DsymqbGvy)
-#### [Q] Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）
+
 #### [Q] 如何保持应用的稳定性
+1. A1: [Android APP性能优化的一些思考](https://juejin.im/entry/5a37a74b5188257d391d2665)
+
 #### [Q] RecyclerView和ListView的性能对比
+1. A1: [【腾讯Bugly干货分享】Android ListView 与 RecyclerView 对比浅析—缓存机制](https://zhuanlan.zhihu.com/p/23339185)
+2. A2: [我们为什么要使用RecyclerView](http://zjutkz.net/2016/08/10/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8RecyclerView/)
+
 #### [Q] ListView的优化
+1. A1: [ListView的优化](https://www.jianshu.com/p/f0408a0f0610)
+
 #### [Q] RecycleView优化
+1. A1: [RecyclerView 性能优化 | 安卓 offer 收割基](https://blankj.com/2018/09/29/optimize-recycler-view/)
+2. A2: [看完感觉我RecyclerView白学了！](https://www.itcodemonkey.com/article/13649.html)
+
 #### [Q] View渲染
+1. A1: [Android进阶——性能优化之布局渲染原理和底层机制机详解及卡顿根源探究（四）](https://blog.csdn.net/CrazyMo_/article/details/80038948)
+2. A2: [深入Android渲染机制](https://www.jianshu.com/p/1ef2a9e5aa91)
+
 #### [Q] Bitmap如何处理大图，如一张30M的大图，如何预防OOM
 #### [Q] java中的四种引用的区别以及使用场景
 #### [Q] 强引用置为null，会不会被回收？
