@@ -722,12 +722,30 @@
 1. A1: [使用Android Studio和MAT进行内存泄漏分析](https://zhuanlan.zhihu.com/p/27593816)
 #### [Q] Java多线程引发的性能问题，怎么解决？
 1. A1: [Android性能优化典范之多线程篇](https://juejin.im/entry/59f82808f265da43346f36fd)
+
 #### [Q] 启动页白屏及黑屏解决？
-#### [Q] 启动太慢怎么解决？
-#### [Q] 怎么保证应用启动不卡顿？
+1. A1: [Android启动页黑屏及最优解决方案](https://juejin.im/post/58ad90518ac2472a2ad9b684)
+
+#### [Q] 启动太慢怎么解决？怎么保证应用启动不卡顿？
+1. A1: [Android性能优化（一）之启动加速35%](https://www.jianshu.com/p/f5514b1a826c)
+2. A2 [应用启动时间](https://developer.android.com/topic/performance/vitals/launch-t)
+
+#### [Q] 90hz 120hz 适配？影响?
+1. A1: [Android 新的流畅体验，90Hz 漫谈](https://www.androidperformance.com/2019/05/15/90hz-on-android/)
+
 #### [Q] App启动崩溃异常捕捉
+1. A1: [Android开发之打造永不崩溃的APP——Crash防护](https://www.jianshu.com/p/01b69d91a3a8)
+
 #### [Q] 自定义View注意事项
+1. A1: [Android自定义View注意事项](https://www.jianshu.com/p/9862cddca1b3)
+2. A2: [自定义视图组件](https://developer.android.com/guide/topics/ui/custom-components?hl=zh-cn)
+
 #### [Q] 现在下载速度很慢,试从网络协议的角度分析原因,并优化(提示：网络的5层都可以涉及)。
+1. A1: [弱网优化在支付宝的深度实践 | mPaaS 线下沙龙 CodeDay#1 分享实录](https://juejin.im/post/5ca5c174f265da30cc7919d1)
+2. A2: 百度弱网优化
+    + [百度 App 网络深度优化系列（一）：DNS 优化](https://www.infoq.cn/article/3QZ0o9Nmv*O0LoEPVRkN)
+    + [百度 App 网络深度优化系列（二）：连接优化](https://www.infoq.cn/article/CDaih849Ao4rS_pctQ2T)
+    + [百度 App 网络深度优化系列（三）：弱网优化](https://www.infoq.cn/article/pQmLUECekW*DsymqbGvy)
 #### [Q] Https请求慢的解决办法（提示：DNS，携带数据，直接访问IP）
 #### [Q] 如何保持应用的稳定性
 #### [Q] RecyclerView和ListView的性能对比
@@ -783,6 +801,11 @@
 #### [Q] 如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？
 #### [Q] App中唤醒其他进程的实现方式
 
+#### [Q] epoll机制是啥
+1. A1: [大话 Select、Poll、Epoll](https://cloud.tencent.com/developer/article/1005481)
+2. A2: [IO多路复用之epoll总结](https://www.cnblogs.com/Anker/p/3263780.html)
+#### [Q] Android 对于Input系统处理流程
+1. A1: [Input系统—事件处理全过程](http://gityuan.com/2016/12/31/input-ipc/)
 </details>
 
 
