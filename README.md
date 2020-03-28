@@ -515,7 +515,7 @@
 #### [Q] 如果在onStop的时候做了网络请求，onResume的时候怎么恢复？
 1. A0: 问题没头没脑，不回答。
 
-#### [Q] Bitmap 使用时候注意什么？
+#### [Q] Bitmap 使用时候注意什么？Bitmap如何处理大图，如一张30M的大图，如何预防OOM
 1. A1: [Bitmap 使用时候注意什么？](https://www.jianshu.com/p/fbf5a310788c)
 
 #### [Q] Bitmap的recycle()
@@ -767,15 +767,26 @@
 1. A1: [Android进阶——性能优化之布局渲染原理和底层机制机详解及卡顿根源探究（四）](https://blog.csdn.net/CrazyMo_/article/details/80038948)
 2. A2: [深入Android渲染机制](https://www.jianshu.com/p/1ef2a9e5aa91)
 
-#### [Q] Bitmap如何处理大图，如一张30M的大图，如何预防OOM
 #### [Q] java中的四种引用的区别以及使用场景
+1. A1: [Java 四种引用介绍及使用场景](https://blog.csdn.net/u014532217/article/details/79184412)
+2. A2: [Java中的强引用，软引用，弱引用，虚引用有什么用？](https://www.zhihu.com/question/37401125)
 #### [Q] 强引用置为null，会不会被回收？
-#### [Q] 请介绍一下NDK
-#### [Q] 什么是NDK库?
-#### [Q] jni用过吗？
-#### [Q] 如何在jni中注册native函数，有几种注册方式?
+1. A1: [Java 中将对象引用置 null 的作用？](https://segmentfault.com/q/1010000000668646)
+2. A2: [java 里对象使用后设置为NULL会减少内存占用吗？](https://www.zhihu.com/question/21356272)
+
+#### [Q] 内存回收机制 什么样的会被GC回收
+1. A1: [Java gc(垃圾回收机制)小结，以及Android优化建议](https://juejin.im/post/5bd01d235188255e3d25f5b5)
+2. A2: [如何回答Android面试中java垃圾回收机制](https://juejin.im/post/5b17a5475188257d6225a7a2)
+3. A3: [Android 垃圾回收机制](https://www.jianshu.com/p/99070b239827)
+
+#### [Q] 请介绍一下NDK 什么是NDK库? JNI 用过吗？
+1. A1: [NDK 入门指南](https://developer.android.com/ndk/guides)
+
+#### [Q] 如何JNI中注册native函数，有几种注册方式?
+1. A1: [Andoid NDK编程 1 － 注册native函数](http://zhixinliu.com/2015/07/01/2015-07-01-jni-register/)
+2. A2: [JNI两种注册过程实战](https://blog.csdn.net/XSF50717/article/details/54693802)
 #### [Q] Java如何调用c、c++语言？
-#### [Q] jni如何调用java层代码？
+#### [Q] JNI如何调用java层代码？
 #### [Q] 进程间通信的方式？
 #### [Q] Binder机制
 #### [Q] 简述IPC？
