@@ -785,19 +785,47 @@
 #### [Q] 如何JNI中注册native函数，有几种注册方式?
 1. A1: [Andoid NDK编程 1 － 注册native函数](http://zhixinliu.com/2015/07/01/2015-07-01-jni-register/)
 2. A2: [JNI两种注册过程实战](https://blog.csdn.net/XSF50717/article/details/54693802)
+
 #### [Q] Java如何调用c、c++语言？
+1. A1: [怎么实现Java调用C++代码？](https://www.zhihu.com/question/36666057)
 #### [Q] JNI如何调用java层代码？
+1. A1: [[JNI]开发之旅（7）JNI函数中调用java对象的方法](https://blog.csdn.net/honjane/article/details/53958166)
+
 #### [Q] 进程间通信的方式？
+1. A1: [【朝花夕拾】Android性能篇之（七）Android跨进程通信篇](https://www.cnblogs.com/andy-songwei/p/10256379.html)
+2. A2: [Android 多进程通信](https://juejin.im/post/5aa08cb3f265da23766ad734)
 #### [Q] Binder机制
+1. A1: [Android跨进程通信：图文详解 Binder机制 原理](https://blog.csdn.net/carson_ho/article/details/73560642)
+
 #### [Q] 简述IPC？
+1. A1: [Android IPC机制（进程间通信）](https://www.jianshu.com/p/96062c549b2a)
+
 #### [Q] 什么是AIDL？
+1. A1: [Android 接口定义语言 (AIDL)](https://developer.android.com/guide/components/aidl?hl=zh-cn)
+2. A2: [Android AIDL使用详解](https://www.jianshu.com/p/29999c1a93cd)
+
 #### [Q] AIDL解决了什么问题？
+1. A1: [Android AIDL 原理解析](https://github.com/cundong/blog/blob/master/Android%20AIDL%20%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90.md)
+2. A2: [Android开发中在哪些场合下会需要使用AIDL?](https://www.zhihu.com/question/20146972)
 #### [Q] AIDL如何使用？
-#### [Q] Android 上的 Inter-Process-Communication 跨进程通信时如何工作的？
+1. A1: [Android 接口定义语言 (AIDL)](https://developer.android.com/guide/components/aidl?hl=zh-cn)
+
+#### [Q] Android 上的 Inter-Process-Communication 跨进程通信是如何工作的？
+1. A1: [Android进程间通信-AIDL实现原理](https://www.cnblogs.com/wangqiang9/p/9517260.html)
+1. A2: [Android 中的多进程通信机制](https://henleylee.github.io/posts/2019/20c92935.html)
+
 #### [Q] 多进程场景遇见过么？
+1. A1: [巧用Android多进程，微信，微博等主流App都在用](https://cjw-blog.net/2017/02/26/AIDL/)
+
 #### [Q] Android进程分类？
+1. A1: [进程和应用生命周期](https://developer.android.com/guide/components/activities/process-lifecycle?hl=zh-cn)
+
 #### [Q] 进程和 Application 的生命周期？
+1. A1: [喜闻乐见之Android应用的生命周期](https://juejin.im/post/5af0fa5d6fb9a07aa34a3246)
+2. A2: [Android：全面解析 Application类](https://juejin.im/entry/59c30e0ff265da06611f7024)
 #### [Q] 进程调度
+1. A1: [从Linux 进程调度到 Android 线程管理](https://zhuanlan.zhihu.com/p/34799829)
+
 #### [Q] 谈谈对进程共享和线程安全的认识
 #### [Q] 谈谈对多进程开发的理解以及多进程应用场景
 #### [Q] 什么是协程？
