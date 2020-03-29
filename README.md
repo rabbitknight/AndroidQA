@@ -870,14 +870,14 @@
 #### [Q] 如何判断链表有回环
 1. [为什么用快慢指针找链表的环，快指针和慢指针一定会相遇？](https://www.zhihu.com/question/23208893)
 
-#### [Q] 常用排序算法
+#### [Q] 常用排序算法 排序算法有哪些？
 1. A1: [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
+2. A2: [[算法总结] 十大排序算法](https://zhuanlan.zhihu.com/p/42586566)
 #### [Q] 二叉树遍历和搜索
 1. A1: [二叉树遍历(先序、中序、后序)](https://www.jianshu.com/p/456af5480cee)
 2. A2: [二叉树遍历（前序、中序、后序、层次遍历、深度优先、广度优先）](https://blog.csdn.net/My_Jobs/article/details/43451187)
 3. A3: [通俗易懂讲解 二叉搜索树](https://zhuanlan.zhihu.com/p/29867652)
 
-#### [Q] 排序算法有哪些？
 #### [Q] 最快的排序算法是哪个？
 #### [Q] 手写一个冒泡排序
 #### [Q] 手写快速排序代码
