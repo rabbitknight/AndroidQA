@@ -827,22 +827,56 @@
 1. A1: [从Linux 进程调度到 Android 线程管理](https://zhuanlan.zhihu.com/p/34799829)
 
 #### [Q] 谈谈对进程共享和线程安全的认识
+1. A1: [谈谈对进程,线程,线程安全和线程状态的理解](https://blog.csdn.net/weixin_43666051/article/details/103206017)
+2. A2: [浅谈 Android 开发中多进程共享数据](https://juejin.im/entry/56f344c7da2f60004ccb4dfd)
+
 #### [Q] 谈谈对多进程开发的理解以及多进程应用场景
+1. A1: [面试题：谈谈对进程的理解？谈谈你对线程的理解？2.进程死锁的原因？如何解决进程死锁？](https://blog.csdn.net/linux12121/article/details/51786241)
 #### [Q] 什么是协程？
-#### [Q] java虚拟机的特性
-#### [Q] 谈谈对jvm的理解
-#### [Q] JVM内存区域，开线程影响哪块内存
-#### [Q] 对Dalvik、ART虚拟机有什么了解？
-#### [Q] Art和Dalvik对比
+1. A1: [协程](https://www.liaoxuefeng.com/wiki/897692888725344/923057403198272)
+
+#### [Q] Java虚拟机的特性 谈谈对jvm的理解
+1. A1: [关于Jvm知识看这一篇就够了](https://zhuanlan.zhihu.com/p/34426768)
+
+#### [Q] JVM内存区域，开线程影响哪块内存 JVM内存模型，内存区域
+1. A1: [可能是把Java内存区域讲的最清楚的一篇文章](https://juejin.im/post/5b7d69e4e51d4538ca5730cb)
+2. A2: [JVM内存区域与多线程](https://www.jianshu.com/p/ece1bb5fa88b)
+3. A3: [浅谈JVM虚拟机内存区域](https://www.yimipuzi.com/1036.html)
+#### [Q] 对Dalvik、ART虚拟机有什么了解？Art和Dalvik对比
+1. A1: [Android Runtime (ART) 和 Dalvik](https://source.android.google.cn/devices/tech/dalvik)
+2. A2: [art和dalvik的区别？](https://www.zhihu.com/question/29406156)
+
 #### [Q] 虚拟机原理，如何自己设计一个虚拟机(内存管理，类加载，双亲委派)
-#### [Q] 谈谈你对双亲委派模型理解
-#### [Q] JVM内存模型，内存区域
-#### [Q] 类加载机制
-#### [Q] 谈谈对ClassLoader(类加载器)的理解
+1. A1: [如何实现一个简单的虚拟机？](https://www.zhihu.com/question/33084689)
+2. A2: [从虚拟机架构到编译器实现](https://zhuanlan.zhihu.com/p/72356928)
+
+#### [Q] 谈谈你对双亲委派模型理解 
+1. A1: [浅谈双亲委派模型](https://www.jianshu.com/p/353c26c744df)
+
+#### [Q] 类加载机制 谈谈对ClassLoader(类加载器)的理解
+1. A1: [Android虚拟机框架：类加载机制](https://juejin.im/post/5a686596f265da3e2d339bb4)
+2. A2: [经典回归：自定义 ClassLoader 和双亲委派机制](https://juejin.im/entry/58afce1a570c3500695d09b5)
+3. A3: [JVM 类加载机制及双亲委派模型](https://juejin.im/post/5b3cc84ee51d4519873f08da)
+4. A4: [深入理解Android中的ClassLoader](https://juejin.im/post/5a28e7e86fb9a045117105c3)
+
 #### [Q] 谈谈对动态加载（OSGI）的理解
+1. A1: [安卓平台中的动态加载技术分析](https://juejin.im/post/5a533c8df265da3e236651f3)
+
 #### [Q] 内存对象的循环引用及避免
+1. A1: [Android内存泄漏场景及解决方法](https://www.jianshu.com/p/f35ca324c285)
+2. A2: [垃圾回收器如何处理循环引用](https://droidyue.com/blog/2015/06/05/how-garbage-collector-handles-circular-references/)
 #### [Q] 内存回收机制、GC回收策略、GC原理时机以及GC对象
+1. A1: [系统剖析Android中的内存泄漏](https://droidyue.com/blog/2016/11/23/memory-leaks-in-android/)
+2. A2: [怎么在面试时回答Java垃圾回收机制（GC）相关问题？](https://www.zhihu.com/question/35164211)
+3. A3: [Android 操作系统的内存回收机制](https://www.ibm.com/developerworks/cn/opensource/os-cn-android-mmry-rcycl/index.html)
+4. A4: [2019-05-07：谈一谈JAVA垃圾回收机制](https://github.com/Moosphan/Android-Daily-Interview/issues/46)
+5. A5: [Java gc(垃圾回收机制)小结，以及Android优化建议](https://www.jianshu.com/p/214e42fc0d37)
+6. A6: [Android GC原理探究](https://zhuanlan.zhihu.com/p/24835977)
+7. A7: [老大难的GC原理及调优，这下全说清楚了](https://juejin.im/post/5b6b986c6fb9a04fd1603f4a)
+
 #### [Q] 垃圾回收机制与调用System.gc()区别
+1. A1: [Why is it bad practice to call System.gc()?](https://stackoverflow.com/questions/2414105/why-is-it-bad-practice-to-call-system-gc)
+
 #### [Q] Ubuntu编译安卓系统
 #### [Q] 系统启动流程是什么？（提示：Zygote进程 –> SystemServer进程 –> 各种系统服务 –> 应用进程）
 #### [Q] 大体说清一个应用程序安装到手机上时发生了什么
@@ -852,6 +886,8 @@
 #### [Q] Android为每个应用程序分配的内存大小是多少？
 #### [Q] Android中进程内存的分配，能不能自己分配定额内存？
 #### [Q] 进程保活的方式
+1. A1: [史上最强Android保活思路：深入剖析腾讯TIM的进程永生技术](https://www.jianshu.com/p/2e01569f8ba8)
+2. A2: [2020年了，Android后台保活还有戏吗？看我如何优雅的实现！](http://www.52im.net/thread-2881-1-1.html)
 #### [Q] 如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？
 #### [Q] App中唤醒其他进程的实现方式
 
