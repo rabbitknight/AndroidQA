@@ -922,6 +922,15 @@
 2. A2: [IO多路复用之epoll总结](https://www.cnblogs.com/Anker/p/3263780.html)
 #### [Q] Android 对于Input系统处理流程
 1. A1: [Input系统—事件处理全过程](http://gityuan.com/2016/12/31/input-ipc/)
+
+#### [Q] GC算法(各种算法的优缺点以及应用场景)
+1. [JVM常见的几种GC算法](https://russxia.com/2019/07/25/JVM%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DGC%E7%AE%97%E6%B3%95/)
+
+#### [Q] Android ART上GC算法
+1. A1: [Android GC 从dalvik到ART的改进分析](https://cruise1008.github.io/2016/03/30/Android-GC-%E4%BB%8Edalvik%E5%88%B0ART%E7%9A%84%E6%94%B9%E8%BF%9B%E5%88%86%E6%9E%90/)
+2. A2: [Android GC原理探究](https://zhuanlan.zhihu.com/p/24835977)
+3. A3: [Android-浅析-GC-基础原理](https://jasonzhong.github.io/2017/09/28/Android-%E6%B5%85%E6%9E%90-GC-%E5%9F%BA%E7%A1%80%E5%8E%9F%E7%90%86/)
+
 </details>
 
 
@@ -932,7 +941,7 @@
 #### [Q] 如何判断链表有回环
 1. [为什么用快慢指针找链表的环，快指针和慢指针一定会相遇？](https://www.zhihu.com/question/23208893)
 
-#### [Q] 常用排序算法 排序算法有哪些？
+#### [Q] 常用排序算法; 排序算法有哪些;手写一个冒泡排序;手写快速排序代码;快速排序的过程、时间复杂度、空间复杂度;手写堆排序;堆排序过程、时间复杂度及空间复杂度 ;写出你所知道的排序算法及时空复杂度，稳定性
 1. A1: [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
 2. A2: [[算法总结] 十大排序算法](https://zhuanlan.zhihu.com/p/42586566)
 #### [Q] 二叉树遍历和搜索
@@ -941,16 +950,22 @@
 3. A3: [通俗易懂讲解 二叉搜索树](https://zhuanlan.zhihu.com/p/29867652)
 
 #### [Q] 最快的排序算法是哪个？
-#### [Q] 手写一个冒泡排序
-#### [Q] 手写快速排序代码
-#### [Q] 快速排序的过程、时间复杂度、空间复杂度
-#### [Q] 手写堆排序
-#### [Q] 堆排序过程、时间复杂度及空间复杂度
-#### [Q] 写出你所知道的排序算法及时空复杂度，稳定性
+1. A1: [总结5种比较高效常用的排序算法](https://blog.csdn.net/hl_java/article/details/72499914)
+
 #### [Q] 二叉树给出根节点和目标节点，找出从根节点到目标节点的路径
+1. A0: 二叉树遍历+通过根节点获取路径
+
 #### [Q] 给阿里2万多名员工按年龄排序应该选择哪个算法？
-#### [Q] GC算法(各种算法的优缺点以及应用场景)
+1. A1: 直接计数排序[对公司几万名员工按年龄排序（时间复杂度为O(N)）](https://blog.csdn.net/dai_wen/article/details/79961168)
+
 #### [Q] 蚁群算法与蒙特卡洛算法
+0. A0: 这似乎难度有点高
+1. A1: 蚁群算法
+    + [10分钟搞懂蚁群算法](https://juejin.im/post/5aa4ddf6f265da23870e73d1)
+    + [干货|十分钟快速get蚁群算法（附代码） - 知乎](https://zhuanlan.zhihu.com/p/45985636)
+2. A2: 蒙特卡洛算法
+    1. [蒙特卡罗算法是什么？](https://www.zhihu.com/question/20254139)
+    
 #### [Q] 子串包含问题(KMP 算法)写代码实现
 #### [Q] 一个无序，不重复数组，输出N个元素，使得N个元素的和相加为M，给出时间复杂度、空间复杂度。手写算法
 #### [Q] 万亿级别的两个URL文件A和B，如何求出A和B的差集C(提示：Bit映射->hash分组->多文件读写效率->磁盘寻址以及应用层面对寻址的优#### [Q] 化)
