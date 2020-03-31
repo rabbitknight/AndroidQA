@@ -239,7 +239,7 @@
 1. A1: [Custom Views and Performance](https://www.kancloud.cn/redzealot2008/android-performance-patterns/345950)
 2. A2: [你最需要知道的View优化](https://zhuanlan.zhihu.com/p/28198804)
 3. A3: [Android性能优化典范 - 第1季](http://hukai.me/android-performance-patterns/)
-
+4. A4: [正确认识onMeasure方法！](https://mp.weixin.qq.com/s/7FE0a9UI5sB538pA6kxpQA)
 #### [Q] 低版本SDK如何实现高版本api？
 1. A1: [RequiresApi](https://developer.android.com/reference/android/support/annotation/RequiresApi)
 2. A2: [Android 高版本API方法在低版本系统上的兼容性处理](https://www.jianshu.com/p/6ad6490c8375)
@@ -327,6 +327,7 @@
 
 #### [Q] 为何Handler可以操作UI，Handler线程切换原理
 1. A1: [Android消息分发及多线程切换之Handler、Message的细枝末节（二）](https://www.jianshu.com/p/a842b8d815d8)
+2. A2: [通过学习Handler源码，手写子线程间的通信](https://mp.weixin.qq.com/s?__biz=MzU3NzQ0MzYxMg==&mid=2247483708&idx=1&sn=e81d8d4e2d920fa783e6ec686937bd38&chksm=fd05c34fca724a59471a26d9f037b6423684f2c2a5a6cc5ef8907712aa67c167fbbb95f92bf4&mpshare=1&scene=1&srcid=&sharer_sharetime=1585648474813&sharer_shareid=faa5430ddf8e3a72161f970023d7de03&key=c967bf038ee4b9073471d47fe0e3a2112403c9db6c3abde3ccab1da023b98e659ee50b048d7a1bdd2054ec6a2923e64c4030fef68e356d7892556383484cc7def9195b428f5bcd4cc94926373ee39229&ascene=1&uin=MTEyNTM1NjEzMg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A7sKMq1ne1EDaEr9Dl%2BPU%2BE%3D&pass_ticket=0iku%2FkvhX9MVQv2%2BuLZfzJxteUkt0ZTaaOrk980uVza4MYxtH7%2F4MaLhB5Ke6loV)
 
 #### [Q] OkHttp缓存机制
 1. A1: [OKHttp全解析系列（五） --OKHttp的缓存机制](https://www.jianshu.com/p/fb81207af121)
@@ -527,6 +528,9 @@
 3. A2: [Android Camera-Camera2使用](https://juejin.im/post/5e425a386fb9a07cc32135e1)
 4. A3: [Android短视频中如何实现720P磨皮美颜录制？](http://yunxin.163.com/blog/video17-0905/)
 
+#### [Q] Android Camera旋转适配
+1. A1: [Android 相机开发中的尺寸和方向问题](https://glumes.com/post/android/android-camera-aspect-ratio--and-orientation/)
+
 #### [Q] ViewPager使用细节，如何设置成每次只初始化当前的Fragment，其他的不初始化？
 1. A1: [ViewPager懒加载极致优化](https://juejin.im/post/5d37bb8df265da1b8b2ba01a)
 
@@ -697,6 +701,7 @@
 
 #### [Q] Binder机制及底层实现
 1. A1: [Binder系列—开篇](http://gityuan.com/2015/10/31/binder-prepare/)
+2. A2: 该文似乎评价很高[Android Bander设计与实现 - 设计篇](https://blog.csdn.net/universus/article/details/6211589)
  
 #### [Q] 对于应用更新这块是如何做的？(解答：灰度，强制更新，分区域更新)？
 1. A1: [MS(5)：android之进阶篇](https://www.jianshu.com/p/e8a4d65ea2d9)
@@ -878,18 +883,39 @@
 1. A1: [Why is it bad practice to call System.gc()?](https://stackoverflow.com/questions/2414105/why-is-it-bad-practice-to-call-system-gc)
 
 #### [Q] Ubuntu编译安卓系统
+1. A2: [自己动手编译Android源码(超详细)](https://www.jianshu.com/p/367f0886e62b)
+
 #### [Q] 系统启动流程是什么？（提示：Zygote进程 –> SystemServer进程 –> 各种系统服务 –> 应用进程）
+1. A1: [Android 操作系统架构开篇](http://gityuan.com/android/) [系统启动架构图](http://gityuan.com/images/android-arch/android-boot.jpg)
+2. A2: [群里收的一张图,请点击链接查看](https://raw.githubusercontent.com/rabbitknight/AndroidInterview/master/res/images/12575795F0092F2F5084C6A9BB3B7CD11AB9978E.png)
+
 #### [Q] 大体说清一个应用程序安装到手机上时发生了什么
-#### [Q] 简述Activity启动全部过程
-#### [Q] App启动流程，从点击桌面开始
+1. A1: [Android应用程序安装过程源代码分析](https://blog.csdn.net/Luoshengyang/article/details/6766010)
+2. A2: [Android应用安装过程深度解析](http://4ch12dy.site/2019/08/01/android-apk-install-process/android-apk-install-process/)
+3. A3: [Android应用安装流程分析](http://solart.cc/2016/10/30/install_apk/)
+
+#### [Q] App启动流程，从点击桌面开始 简述Activity启动全部过程
+1. A1: [startActivity启动过程分析](http://gityuan.com/2016/03/12/start-activity/)
+2. A2: [App 启动过程（含 Activity 启动过程） | 安卓 offer 收割基](https://blankj.com/2018/09/29/the-process-of-app-start/)
+
 #### [Q] 逻辑地址与物理地址，为什么使用逻辑地址？
+1. A1: [逻辑地址、线性地址和物理地址](https://vosamo.github.io/2016/01/VA2PA/)
+2. A2: [操作系统 内存地址（逻辑地址、线性地址、物理地址）概念](https://blog.51cto.com/laoxu/1166661)
+
+#### [Q] 用户态和核心态
+1. A1: [怎样去理解Linux用户态和内核态？](https://zhuanlan.zhihu.com/p/69554144)
+#### [Q] Linux系统地址空间
+1. A1: [Linux的进程地址空间（一）](https://zhuanlan.zhihu.com/p/66794639)
+
 #### [Q] Android为每个应用程序分配的内存大小是多少？
+1. A1: [Android为每个应用分配多少内存？](https://zhuanlan.zhihu.com/p/27269803)
+
 #### [Q] Android中进程内存的分配，能不能自己分配定额内存？
-#### [Q] 进程保活的方式
+1. A1: [Android中App可分配内存的大小](https://www.cnblogs.com/yaowen/p/6347682.html)
+
+#### [Q] 进程保活的方式 如何保证一个后台服务不被杀死？ ;相同问题：如何保证service在后台不被kill？比较省电的方式是什么？ ;App中唤醒其他进程的实现方式
 1. A1: [史上最强Android保活思路：深入剖析腾讯TIM的进程永生技术](https://www.jianshu.com/p/2e01569f8ba8)
 2. A2: [2020年了，Android后台保活还有戏吗？看我如何优雅的实现！](http://www.52im.net/thread-2881-1-1.html)
-#### [Q] 如何保证一个后台服务不被杀死？（相同问题：如何保证service在后台不被kill？）比较省电的方式是什么？
-#### [Q] App中唤醒其他进程的实现方式
 
 #### [Q] epoll机制是啥
 1. A1: [大话 Select、Poll、Epoll](https://cloud.tencent.com/developer/article/1005481)
