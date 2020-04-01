@@ -71,6 +71,8 @@
 #### [Q] client如何确定自己发送的消息被server收到?
 #### [Q] 谈谈你对WebSocket的理解
 #### [Q] WebSocket与socket的区别
+#### [Q] 泛型擦除是什么，会带来什么问题？
+1. A1: [面试官问我：“泛型擦除是什么，会带来什么问题？”](https://mp.weixin.qq.com/s/i6ZXpjBfS-kSszF-dstZlw)
 </details>
 
 ### Android相关
@@ -254,6 +256,10 @@
 1. A1: [Android Bitmap理解](https://blog.csdn.net/wangcheng_/article/details/78253953)
 2. A2: [彻底理解Bitmap的高效加载策略](https://www.jianshu.com/p/5f02db4a225d)
 3. A3: [Android O Bitmap 内存分配](https://www.cnblogs.com/xiaji5572/p/7794083.html)
+
+#### [Q] Bitmap对象占用内存计算
+1. A1: [Android坑档案：你的Bitmap究竟占多大内存？](https://zhuanlan.zhihu.com/p/20732309)
+2. A2: [Bitmap究竟占多大内存](https://xiongcen.github.io/2017/01/04/AndroidBitmapMemory/)
 
 #### [Q] ActivityThread，AMS，WMS的工作原理
 0. 关于Android底层实现，全系推荐[gityuan](http://gityuan.com/)的文章，其他杂七杂八的先省略了！
@@ -897,6 +903,7 @@
 #### [Q] App启动流程，从点击桌面开始 简述Activity启动全部过程
 1. A1: [startActivity启动过程分析](http://gityuan.com/2016/03/12/start-activity/)
 2. A2: [App 启动过程（含 Activity 启动过程） | 安卓 offer 收割基](https://blankj.com/2018/09/29/the-process-of-app-start/)
+3. A3: [Android进阶——Android四大组件启动机制之Activity启动过程](https://blog.csdn.net/qq_30379689/article/details/79611217)
 
 #### [Q] 逻辑地址与物理地址，为什么使用逻辑地址？
 1. A1: [逻辑地址、线性地址和物理地址](https://vosamo.github.io/2016/01/VA2PA/)
@@ -931,6 +938,8 @@
 2. A2: [Android GC原理探究](https://zhuanlan.zhihu.com/p/24835977)
 3. A3: [Android-浅析-GC-基础原理](https://jasonzhong.github.io/2017/09/28/Android-%E6%B5%85%E6%9E%90-GC-%E5%9F%BA%E7%A1%80%E5%8E%9F%E7%90%86/)
 
+#### [Q] RenderScript有无使用过
+1. A1: [RenderScript 概览](https://developer.android.com/guide/topics/renderscript/compute)
 </details>
 
 
@@ -995,3 +1004,8 @@
 1. [@扔物线:Hencoder全系](https://hencoder.com/)
 2. [@Gityuan:Android 操作系统架构](http://gityuan.com/android/)
 3. [最全的BAT大厂面试题整理](https://www.jianshu.com/p/c70989bd5f29)
+4. Android篇：2019初中级Android开发社招面试解答
+    + [上](https://juejin.im/post/5c8211fee51d453a136e36b0)
+    + [中](https://juejin.im/post/5c85cead5188257c6703af47)
+    + [下](https://juejin.im/post/5c984e926fb9a070c975a9b4)
+5. [XXXX题集](https://raw.githubusercontent.com/rabbitknight/AndroidInterview/master/res/pdfs/13E93ADE59269EE7CDD386C9602983A8CB0B6AC313B027B538E1BF214E54BE8C.pdf)
