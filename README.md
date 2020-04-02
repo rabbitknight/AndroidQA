@@ -740,6 +740,7 @@
 #### [Q] 启动太慢怎么解决？怎么保证应用启动不卡顿？
 1. A1: [Android性能优化（一）之启动加速35%](https://www.jianshu.com/p/f5514b1a826c)
 2. A2 [应用启动时间](https://developer.android.com/topic/performance/vitals/launch-t)
+3. A3: [面试官：今日头条启动很快，你觉得可能是做了哪些优化？](https://juejin.im/post/5d95f4a4f265da5b8f10714b)
 
 #### [Q] 90hz 120hz 适配？影响?
 1. A1: [Android 新的流畅体验，90Hz 漫谈](https://www.androidperformance.com/2019/05/15/90hz-on-android/)
@@ -942,6 +943,8 @@
 1. A1: [RenderScript 概览](https://developer.android.com/guide/topics/renderscript/compute)
 </details>
 
+#### [Q] 在Android中两个进程之间传输大数据，可以使用什么方式实现?这些方式中哪种方式最高效?请说明原因。
+1. A1: 推荐使用MemoryFile
 
 ### 数据结构和算法
 
