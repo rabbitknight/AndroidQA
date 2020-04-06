@@ -760,6 +760,7 @@
     + [百度 App 网络深度优化系列（一）：DNS 优化](https://www.infoq.cn/article/3QZ0o9Nmv*O0LoEPVRkN)
     + [百度 App 网络深度优化系列（二）：连接优化](https://www.infoq.cn/article/CDaih849Ao4rS_pctQ2T)
     + [百度 App 网络深度优化系列（三）：弱网优化](https://www.infoq.cn/article/pQmLUECekW*DsymqbGvy)
+3. A3: [Android 使用OkHttp支持HttpDNS](https://blog.csdn.net/sbsujjbcy/article/details/50532797)
 
 #### [Q] 如何保持应用的稳定性
 1. A1: [Android APP性能优化的一些思考](https://juejin.im/entry/5a37a74b5188257d391d2665)
@@ -946,6 +947,10 @@
 #### [Q] 在Android中两个进程之间传输大数据，可以使用什么方式实现?这些方式中哪种方式最高效?请说明原因。
 1. A1: 推荐使用MemoryFile
 
+#### [Q] 如何监控应用性能
+1. A1: [Android Choreographer 源码分析](https://www.jianshu.com/p/996bca12eb1d)
+2. A2: [Android 基于 Choreographer 的渲染机制详解](https://www.androidperformance.com/2019/10/22/Android-Choreographer/)
+
 ### 数据结构和算法
 
 <details>
@@ -1012,3 +1017,4 @@
     + [中](https://juejin.im/post/5c85cead5188257c6703af47)
     + [下](https://juejin.im/post/5c984e926fb9a070c975a9b4)
 5. [XXXX题集](https://raw.githubusercontent.com/rabbitknight/AndroidInterview/master/res/pdfs/13E93ADE59269EE7CDD386C9602983A8CB0B6AC313B027B538E1BF214E54BE8C.pdf)
+6. [Android Tech And Perf](https://www.androidperformance.com/2019/12/01/BlogMap/)
