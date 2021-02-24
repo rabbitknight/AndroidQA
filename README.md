@@ -75,6 +75,43 @@
 1. A1: [面试官问我：“泛型擦除是什么，会带来什么问题？”](https://mp.weixin.qq.com/s/i6ZXpjBfS-kSszF-dstZlw)
 </details>
 
+
+
+#### [Q] sleep/wait/yield的区别。wait线程如何唤醒他?
+1. A1: sleep 让出CPU资源，不释放锁。wait让出cpu资源和锁。yield 回归可执行状态。
+2. A2: [[译]Java中Wait、Sleep和Yield方法的区别ZacharyJia](https://www.jianshu.com/p/25e959037eed)
+#### [Q] sleep可中断吗？
+1. A1: 可以，因为需要catch InterruptedException。
+#### [Q] 线程生命周期
+1. A1: 新建、就绪、运行、阻塞、销毁。
+2. A2: [JAVA面试题 线程的生命周期包括哪几个阶段？](https://www.cnblogs.com/marsitman/p/11228684.html)
+
+#### [Q] 线程池有没有上限？
+1. A1: [线程池有没有上限](https://blog.csdn.net/github_37130188/article/details/89504500)
+
+#### [Q] 线程池基本原理，参数定义。
+1. A1: [图解 | 你管这破玩意叫线程池？](https://blog.csdn.net/coderising/article/details/112690662)
+
+参数| 说明 
+---|---
+corePoolSize	| 核心线程数量，线程池维护线程的最少数量
+maximumPoolSize	|   线程池维护线程的最大数量
+keepAliveTime	| 当线程池线程的数量超过corePoolSize的时候，多余的空闲线程存活的时间，如果超过了corePoolSize，在keepAliveTime的时间之后，销毁线程
+unit            | keepAliveTime的单位，TimeUnit中的几个静态属性：NANOSECONDS、MICROSECONDS、MILLISECONDS、SECONDS
+workQueue | 	工作队列，将被提交但尚未执行的任务缓存起来
+threadFactory | 线程工厂，用于创建线程，不指定为默认线程工厂DefaultThreadFactory
+handler | 线程池对拒绝任务的处理策略
+--- | ---
+
+#### [Q] 如何确保三个线程顺序执行？
+1. A1: [如何确保三个线程顺序执行？](https://blog.csdn.net/Evankaka/article/details/80800081)
+    + join
+    + CountDownLatch
+    + CachedThreadPool
+    + blockingQueue
+
+
+
 ### Android相关
 <details>
 
@@ -463,9 +500,6 @@
 
 #### [Q] Android线程有没有上限？
 1. A1: [57、Android线程有没有上限](https://blog.csdn.net/FDoubleman/article/details/98599279)
-
-#### [Q] 线程池有没有上限？
-1. A1: [线程池有没有上限](https://blog.csdn.net/github_37130188/article/details/89504500)
 
 #### [Q] ListView重用的是什么？
 1. A1: [ListView复用和优化详解](https://blog.csdn.net/u011692041/article/details/53099584)
