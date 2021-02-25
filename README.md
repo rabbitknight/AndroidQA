@@ -112,11 +112,10 @@
 1. A1: [如何正确地停止一个线程？](https://www.cnblogs.com/greta/p/5624839.html)
 
 #### [Q] CAS介绍。CAS无锁编程
-1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)
+1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
 2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
 
 
-</details>
 
 
 
@@ -154,6 +153,7 @@ handler | 线程池对拒绝任务的处理策略
     + blockingQueue
 
 
+</details>
 
 ### Android相关
 <details>
