@@ -73,6 +73,49 @@
 #### [Q] WebSocket与socket的区别
 #### [Q] 泛型擦除是什么，会带来什么问题？
 1. A1: [面试官问我：“泛型擦除是什么，会带来什么问题？”](https://mp.weixin.qq.com/s/i6ZXpjBfS-kSszF-dstZlw)
+
+#### [Q] sychronied修饰普通方法和静态方法的区别
+1. A1: 普通方法和实例化对象Object相关，静态方法和类Class相关。
+2. A2: [Synchronized关键字加在普通方法上和加在静态方法上有什么区别?_学习中啊哈哈的博客-CSDN博客](https://blog.csdn.net/weixin_43658899/article/details/107230699)
+
+#### [Q] 什么是可见性Visibility?原子性、可见性、有序性
+1. A1: 核心是多线程访问同一变量。
+   + 可见性：当一个线程修改了共享变量的值，其他线程能够立即得知这个修改
+   + 原子性：一个操作或者多个操作，要么全部执行并且执行的过程不会被任何因素打断，要么就都不执行。
+   + 顺序性：程序执行的顺序按照代码的先后顺序执行。
+2. A2: [并发编程三大特性——原子性、可见性、有序性 - Ye_yang - 博客园]（https://www.cnblogs.com/yeyang/p/13576636.html）
+
+#### [Q] 锁分为哪几类?
+1. A1：
+   + 是否抢占。直接锁：悲观；不锁：乐观。
+   + 抢失败，是否阻塞:。不阻塞：自旋&适应性自旋；
+   + 怎么抢？不锁重试：无锁；自动抢：偏向锁；没抢到自旋等待：轻量级锁，没抢到阻塞等待：重量级锁
+   + 排队抢？排:公平锁；插队：非公平锁
+   + 抢到了，再抢。能再抢：可重入；不能再抢：非可重入锁
+   + 共享？共享：共享锁；不共享：排他锁
+2. A2: [不可不说的Java“锁”事-美团技术团队](https://tech.meituan.com/2018/11/15/java-lock.html)
+#### [Q] AQS原理？AbstractQueuedSynchronizer
+1. A1: [从ReentrantLock的实现看AQS的原理及应用-美团技术团队](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
+#### [Q] ReentrantLock介绍
+1. A1: [彻底理解ReentrantLock](https://juejin.cn/post/6844903601542807559)
+#### [Q] Synchronized与ReentrantLoack区别
+1. A1: 
+#### [Q] volatile能否保证线程安全
+1. A1: volatile变量是一种同步机制；volatile能够确保可见性
+2. A2: 除了可见性还有原子性与顺序性。
+3. [volatile是什么？volatile能保证线程安全性吗？如何正确使用volatile？](https://www.cnblogs.com/laipimei/p/11857786.html)
+
+#### [Q]什么是守护线程？
+1. A1：[java 用户线程和守护线程](https://www.cnblogs.com/myseries/p/12078413.html)
+  
+#### [Q]如何退出一个线程？
+1. A1: [如何正确地停止一个线程？](https://www.cnblogs.com/greta/p/5624839.html)
+
+#### [Q] CAS介绍。CAS无锁编程
+1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)
+2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
+
+
 </details>
 
 
@@ -585,10 +628,6 @@ handler | 线程池对拒绝任务的处理策略
 0. A0: 小红点UI实现很简单，关键在于UI怎么和消息绑定。后面又可以引申出长连接。
 1. A1: [简单实现消息提示(小红点)](https://blog.csdn.net/qq_28268507/article/details/70314844)
 
-#### [Q] CAS介绍。
-1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)
-2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
-
 #### [Q] 图片库对比
 1. A1: [图片加载库比较](https://juejin.im/entry/5af9aabf51882542bd69d0c0)
 2. A2: [Android 库 图片库比较](https://www.jianshu.com/p/44a4ee648ab4)
@@ -976,14 +1015,15 @@ handler | 线程池对拒绝任务的处理策略
 
 #### [Q] RenderScript有无使用过
 1. A1: [RenderScript 概览](https://developer.android.com/guide/topics/renderscript/compute)
-</details>
 
 #### [Q] 在Android中两个进程之间传输大数据，可以使用什么方式实现?这些方式中哪种方式最高效?请说明原因。
-1. A1: 推荐使用MemoryFile
+1. A1: 推荐使用MemoryFile,高版本修改为SharedMemory。核心都是通过Binder传输序列化的文件描述符，一边发送一边接收。
 
 #### [Q] 如何监控应用性能
 1. A1: [Android Choreographer 源码分析](https://www.jianshu.com/p/996bca12eb1d)
 2. A2: [Android 基于 Choreographer 的渲染机制详解](https://www.androidperformance.com/2019/10/22/Android-Choreographer/)
+
+</details>
 
 ### 数据结构和算法
 
