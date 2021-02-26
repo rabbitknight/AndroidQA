@@ -17,19 +17,19 @@
 4. 如果要PDF文档，请将文档，至于 [</res/pdfs/>](https://github.com/rabbitknight/AndroidInterview/tree/master/res/pdfs)
 5. 等级标识 三级描述：
 
-标识 | 说明
---- | ---
-![低](https://img.shields.io/badge/level-BASE-green) | 低 
-![中](https://img.shields.io/badge/level-MIDDLE-blue) | 中 
-![高](https://img.shields.io/badge/level-HARD-red) | 高 
+| 标识                                                  | 说明 |
+| ----------------------------------------------------- | ---- |
+| ![低](https://img.shields.io/badge/level-BASE-green)  | 低   |
+| ![中](https://img.shields.io/badge/level-MIDDLE-blue) | 中   |
+| ![高](https://img.shields.io/badge/level-HARD-red)    | 高   |
 
 6. 特殊标识：
 
-标识|说明
----|---
-![推荐-官方](https://img.shields.io/badge/rating-官方-orange) | 官方文档
-![推荐-XXXX](https://img.shields.io/badge/rating-XXX-orange) | 等级推荐
-![不推荐](https://img.shields.io/badge/rating-不推荐-RED) | 不推荐
+| 标识                                                          | 说明     |
+| ------------------------------------------------------------- | -------- |
+| ![推荐-官方](https://img.shields.io/badge/rating-官方-orange) | 官方文档 |
+| ![推荐-XXXX](https://img.shields.io/badge/rating-XXX-orange)  | 等级推荐 |
+| ![不推荐](https://img.shields.io/badge/rating-不推荐-RED)     | 不推荐   |
 
 
 ## 清单
@@ -115,10 +115,6 @@
 1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
 2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
 
-
-
-
-
 #### [Q] sleep/wait/yield的区别。wait线程如何唤醒他?
 1. A1: sleep 让出CPU资源，不释放锁。wait让出cpu资源和锁。yield 回归可执行状态。
 2. A2: [[译]Java中Wait、Sleep和Yield方法的区别ZacharyJia](https://www.jianshu.com/p/25e959037eed)
@@ -134,16 +130,16 @@
 #### [Q] 线程池基本原理，参数定义。
 1. A1: [图解 | 你管这破玩意叫线程池？](https://blog.csdn.net/coderising/article/details/112690662)
 
-参数| 说明 
----|---
-corePoolSize	| 核心线程数量，线程池维护线程的最少数量
-maximumPoolSize	|   线程池维护线程的最大数量
-keepAliveTime	| 当线程池线程的数量超过corePoolSize的时候，多余的空闲线程存活的时间，如果超过了corePoolSize，在keepAliveTime的时间之后，销毁线程
-unit            | keepAliveTime的单位，TimeUnit中的几个静态属性：NANOSECONDS、MICROSECONDS、MILLISECONDS、SECONDS
-workQueue | 	工作队列，将被提交但尚未执行的任务缓存起来
-threadFactory | 线程工厂，用于创建线程，不指定为默认线程工厂DefaultThreadFactory
-handler | 线程池对拒绝任务的处理策略
---- | ---
+| 参数            | 说明                                                                                                                            |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| corePoolSize    | 核心线程数量，线程池维护线程的最少数量                                                                                          |
+| maximumPoolSize | 线程池维护线程的最大数量                                                                                                        |
+| keepAliveTime   | 当线程池线程的数量超过corePoolSize的时候，多余的空闲线程存活的时间，如果超过了corePoolSize，在keepAliveTime的时间之后，销毁线程 |
+| unit            | keepAliveTime的单位，TimeUnit中的几个静态属性：NANOSECONDS、MICROSECONDS、MILLISECONDS、SECONDS                                 |
+| workQueue       | 工作队列，将被提交但尚未执行的任务缓存起来                                                                                      |
+| threadFactory   | 线程工厂，用于创建线程，不指定为默认线程工厂DefaultThreadFactory                                                                |
+| handler         | 线程池对拒绝任务的处理策略                                                                                                      |
+| ---             | ---                                                                                                                             |
 
 #### [Q] 如何确保三个线程顺序执行？
 1. A1: [如何确保三个线程顺序执行？](https://blog.csdn.net/Evankaka/article/details/80800081)
@@ -152,7 +148,9 @@ handler | 线程池对拒绝任务的处理策略
     + CachedThreadPool
     + blockingQueue
 
-
+####  ClassLoader.loadClass()与Class.forName()区别?
+1. A1: Class.forName加载类是将类进了初始化，而ClassLoader的loadClass并没有对类进行初始化，只是把类加载到了虚拟机中
+2. A2: [Class.forName和ClassLoader区别](https://mp.weixin.qq.com/s/g5DLNzLSMAmdIIo4dwcpdA)
 </details>
 
 ### Android相关
