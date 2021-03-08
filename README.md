@@ -423,9 +423,12 @@
 1. A1: [OKHttp全解析系列（五） --OKHttp的缓存机制](https://www.jianshu.com/p/fb81207af121)
 
 #### [Q] OkHttp连接池结构
-1. A1: 
+1. A1: 链接池使用队列实现。ConcurrentLinkedQueue.
+2. A2: [OkHttp——连接池管理（6）](https://blog.csdn.net/m0_37884977/article/details/100848687)
+
 #### [Q] LruCache数据结构和自定义实现
-1. A1:
+1. A1: LruCache最简单即使用链表数据结构。将最新使用的数据放到队列头最晚使用的放到队列尾巴。内存到达阈值从尾巴删除。
+2. A2: android.util包中已经提供了LruCache的实现。
 #### [Q] (Glide)BitmapPool结构以及复用原理
 1. A1: BitmapPool指的[com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool](https://github.com/bumptech/glide/blob/master/library/src/main/java/com/bumptech/glide/load/engine/bitmap_recycle/BitmapPool.java),具体实现实现为：LruBitmapPool。
 2. A2: BitmapPool定义如下接口
@@ -439,6 +442,17 @@
 | getDirty          | 从缓存中直接获取指定尺寸对象       | 若获取不到就创建 |
 | clearMemory       | 清理所有缓存                       | ---              |
 | tirmMemory        | 根据回收等级 清理内存              | ---              |
+
+LruBitmapPool的缓存策略,由 LruPoolStrategy接口实现，分为SizeConfigStrategy/AttributeStrategy/SizeStrategy实现。
+这些类区别是生成LinkHashMap的Key生成方式不一样，分为是空间大小+config/属性绝对匹配/空间大小重新分配匹配
+| 策略|Key生成|备注|
+---|---|---
+AttributeStrategy|宽高+config|绝对匹配|
+SizeStrategy|占用空间|匹配空间+重新配置|
+SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
+---|---|---
+
+针对于LRU算法的实现，实际是通过GroupedLinkedMap,本质就是将最新使用的放到链表头，将最低频放的放到链表尾巴，回收时回收尾巴。
 
 #### [Q] 如何提升Activity开启速度
 1. A1: [提升进入界面的速度](https://zmywly8866.github.io/2015/09/28/promote-enter-activity-speed.html)
@@ -1078,8 +1092,8 @@
 2. A2: 蒙特卡洛算法
     1. [蒙特卡罗算法是什么？](https://www.zhihu.com/question/20254139)
 
-#### [Q] 系数数组,不使用map实现O(1)复杂度元素查找
-    
+#### [Q] 稀疏数组不使用map实现O(1)复杂度元素查找
+1. A1: 二分查找，遇到空"",向左向右调整边界。
 #### [Q] 子串包含问题(KMP 算法)写代码实现
 #### [Q] 一个无序，不重复数组，输出N个元素，使得N个元素的和相加为M，给出时间复杂度、空间复杂度。手写算法
 #### [Q] 万亿级别的两个URL文件A和B，如何求出A和B的差集C(提示：Bit映射->hash分组->多文件读写效率->磁盘寻址以及应用层面对寻址的优#### [Q] 化)
