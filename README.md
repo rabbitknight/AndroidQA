@@ -422,6 +422,23 @@
 #### [Q] OkHttp缓存机制
 1. A1: [OKHttp全解析系列（五） --OKHttp的缓存机制](https://www.jianshu.com/p/fb81207af121)
 
+#### [Q] OkHttp连接池结构
+1. A1: 
+#### [Q] LruCache数据结构和自定义实现
+1. A1:
+#### [Q] (Glide)BitmapPool结构以及复用原理
+1. A1: BitmapPool指的[com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool](https://github.com/bumptech/glide/blob/master/library/src/main/java/com/bumptech/glide/load/engine/bitmap_recycle/BitmapPool.java),具体实现实现为：LruBitmapPool。
+2. A2: BitmapPool定义如下接口
+
+| 接口              | 描述                               | 备注             |
+| ----------------- | ---------------------------------- | ---------------- |
+| getMaxSize        | 获取池子最大内存                   | Byte为单位       |
+| setSizeMultiplier | 设置调整乘数                       | 取值范围0-1      |
+| put               | 回收缓存                           | “可回收”对象     |
+| get               | 从缓存中获取指定尺寸的对象并做清零 | 若获取不到就创建 |
+| getDirty          | 从缓存中直接获取指定尺寸对象       | 若获取不到就创建 |
+| clearMemory       | 清理所有缓存                       | ---              |
+| tirmMemory        | 根据回收等级 清理内存              | ---              |
 
 #### [Q] 如何提升Activity开启速度
 1. A1: [提升进入界面的速度](https://zmywly8866.github.io/2015/09/28/promote-enter-activity-speed.html)
@@ -1060,6 +1077,8 @@
     + [干货|十分钟快速get蚁群算法（附代码） - 知乎](https://zhuanlan.zhihu.com/p/45985636)
 2. A2: 蒙特卡洛算法
     1. [蒙特卡罗算法是什么？](https://www.zhihu.com/question/20254139)
+
+#### [Q] 系数数组,不使用map实现O(1)复杂度元素查找
     
 #### [Q] 子串包含问题(KMP 算法)写代码实现
 #### [Q] 一个无序，不重复数组，输出N个元素，使得N个元素的和相加为M，给出时间复杂度、空间复杂度。手写算法
