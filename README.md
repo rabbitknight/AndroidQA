@@ -89,7 +89,7 @@
    + 可见性：当一个线程修改了共享变量的值，其他线程能够立即得知这个修改
    + 原子性：一个操作或者多个操作，要么全部执行并且执行的过程不会被任何因素打断，要么就都不执行。
    + 顺序性：程序执行的顺序按照代码的先后顺序执行。
-2. A2: [并发编程三大特性——原子性、可见性、有序性 - Ye_yang - 博客园]（https://www.cnblogs.com/yeyang/p/13576636.html）
+2. A2: [并发编程三大特性——原子性、可见性、有序性 - Ye_yang - 博客园](https://www.cnblogs.com/yeyang/p/13576636.html)
 
 #### [Q] 锁分为哪几类?
 1. A1：
@@ -111,15 +111,14 @@
 2. A2: 除了可见性还有原子性与顺序性。
 3. [volatile是什么？volatile能保证线程安全性吗？如何正确使用volatile？](https://www.cnblogs.com/laipimei/p/11857786.html)
 
+#### [Q] CAS介绍。CAS无锁编程
+1. A0: Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
+
 #### [Q]什么是守护线程？
 1. A1：[java 用户线程和守护线程](https://www.cnblogs.com/myseries/p/12078413.html)
   
 #### [Q]如何退出一个线程？
 1. A1: [如何正确地停止一个线程？](https://www.cnblogs.com/greta/p/5624839.html)
-
-#### [Q] CAS介绍。CAS无锁编程
-1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
-2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
 
 #### [Q] sleep/wait/yield的区别。wait线程如何唤醒他?
 1. A1: sleep 让出CPU资源，不释放锁。wait让出cpu资源和锁。yield 回归可执行状态。
@@ -158,6 +157,10 @@
 1. A1: Class.forName加载类是将类进了初始化，而ClassLoader的loadClass并没有对类进行初始化，只是把类加载到了虚拟机中
 2. A2: [Class.forName和ClassLoader区别](https://mp.weixin.qq.com/s/g5DLNzLSMAmdIIo4dwcpdA)
 </details>
+
+#### HashMap和HashTable、ConcurrentHashMap 区别，实现原理，对比。
+1. A1:都是用的数组+链表的数据结构。通过Key的哈希值计算数组坐标。然后存入链表。HashTable方法加锁，HashMap没有ConcurrentHashMap将entry数组拆分为多个Segment数组，对Segment等级进行加锁，提高并发性。
+2. A2:[HashMap和ConcurrentHashMap实现原理及源码分析](https://www.cnblogs.com/jing99/p/11330341.html)
 
 ### Android相关
 <details>
@@ -313,7 +316,8 @@
 5. A5: [Oreo](https://developer.android.com/about/versions/oreo)
 6. A6: [Pie](https://developer.android.com/about/versions/pie)
 7. A7: [10/Q](https://developer.android.com/about/versions/10)
-8. A8: [11/Preview](https://developer.android.com/preview)
+8. A8: [11](https://developer.android.com/about/versions/11)
+8. A9: [12/Preview](https://developer.android.com/about/versions/12)
 
 #### [Q] Requestlayout，onlayout，onDraw，DrawChild区别与联系
 1 A1: [requestLayout()与onLayout()；onDraw()与drawChild()的区别和联系](https://blog.csdn.net/weixin_41101173/article/details/79726311)
@@ -478,6 +482,7 @@ SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
 
 #### [Q] 请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系
 1. A1: 了解下Handler机制即可[Message、Handler、Message Queue、Looper之间的关系](https://www.jianshu.com/p/352877cd61c1)
+
 #### [Q] 请描述一下View事件传递分发机制 Touch事件传递流程
 1. A1: [Android事件分发机制](http://gityuan.com/2015/09/19/android-touch/)
 2. A2: [Android事件分发机制——从基础深入源码解析](https://www.jianshu.com/p/e6ceb7f767d8)
@@ -1057,6 +1062,9 @@ SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
 #### [Q] 如何监控应用性能
 1. A1: [Android Choreographer 源码分析](https://www.jianshu.com/p/996bca12eb1d)
 2. A2: [Android 基于 Choreographer 的渲染机制详解](https://www.androidperformance.com/2019/10/22/Android-Choreographer/)
+
+#### [Q] RecyclerView 的adapter属于MVP那一层。
+#### [Q] MVC/MVP/MVVM对比，结合场景谈谈你的思考
 
 </details>
 
