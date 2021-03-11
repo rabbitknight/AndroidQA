@@ -89,7 +89,7 @@
    + 可见性：当一个线程修改了共享变量的值，其他线程能够立即得知这个修改
    + 原子性：一个操作或者多个操作，要么全部执行并且执行的过程不会被任何因素打断，要么就都不执行。
    + 顺序性：程序执行的顺序按照代码的先后顺序执行。
-2. A2: [并发编程三大特性——原子性、可见性、有序性 - Ye_yang - 博客园](https://www.cnblogs.com/yeyang/p/13576636.html)
+2. A2: [并发编程三大特性——原子性、可见性、有序性 - Ye_yang - 博客园]（https://www.cnblogs.com/yeyang/p/13576636.html）
 
 #### [Q] 锁分为哪几类?
 1. A1：
@@ -111,14 +111,15 @@
 2. A2: 除了可见性还有原子性与顺序性。
 3. [volatile是什么？volatile能保证线程安全性吗？如何正确使用volatile？](https://www.cnblogs.com/laipimei/p/11857786.html)
 
-#### [Q] CAS介绍。CAS无锁编程
-1. A0: Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
-
 #### [Q]什么是守护线程？
 1. A1：[java 用户线程和守护线程](https://www.cnblogs.com/myseries/p/12078413.html)
   
 #### [Q]如何退出一个线程？
 1. A1: [如何正确地停止一个线程？](https://www.cnblogs.com/greta/p/5624839.html)
+
+#### [Q] CAS介绍。CAS无锁编程
+1. A0: 这题确定不是 Compare And Swap吗。。[无锁机制----比较交换CAS Compare And Swap](https://blog.csdn.net/yanluandai1985/article/details/82686486)  
+2. A1: 原链接。[这是阿里巴巴的面试题，我不是很了解，可以参考博客: CAS简介](https://blog.csdn.net/jly4758/article/details/46673835)
 
 #### [Q] sleep/wait/yield的区别。wait线程如何唤醒他?
 1. A1: sleep 让出CPU资源，不释放锁。wait让出cpu资源和锁。yield 回归可执行状态。
@@ -157,10 +158,6 @@
 1. A1: Class.forName加载类是将类进了初始化，而ClassLoader的loadClass并没有对类进行初始化，只是把类加载到了虚拟机中
 2. A2: [Class.forName和ClassLoader区别](https://mp.weixin.qq.com/s/g5DLNzLSMAmdIIo4dwcpdA)
 </details>
-
-#### HashMap和HashTable、ConcurrentHashMap 区别，实现原理，对比。
-1. A1:都是用的数组+链表的数据结构。通过Key的哈希值计算数组坐标。然后存入链表。HashTable方法加锁，HashMap没有ConcurrentHashMap将entry数组拆分为多个Segment数组，对Segment等级进行加锁，提高并发性。
-2. A2:[HashMap和ConcurrentHashMap实现原理及源码分析](https://www.cnblogs.com/jing99/p/11330341.html)
 
 ### Android相关
 <details>
@@ -316,8 +313,7 @@
 5. A5: [Oreo](https://developer.android.com/about/versions/oreo)
 6. A6: [Pie](https://developer.android.com/about/versions/pie)
 7. A7: [10/Q](https://developer.android.com/about/versions/10)
-8. A8: [11](https://developer.android.com/about/versions/11)
-8. A9: [12/Preview](https://developer.android.com/about/versions/12)
+8. A8: [11/Preview](https://developer.android.com/preview)
 
 #### [Q] Requestlayout，onlayout，onDraw，DrawChild区别与联系
 1 A1: [requestLayout()与onLayout()；onDraw()与drawChild()的区别和联系](https://blog.csdn.net/weixin_41101173/article/details/79726311)
@@ -427,12 +423,9 @@
 1. A1: [OKHttp全解析系列（五） --OKHttp的缓存机制](https://www.jianshu.com/p/fb81207af121)
 
 #### [Q] OkHttp连接池结构
-1. A1: 链接池使用队列实现。ConcurrentLinkedQueue.
-2. A2: [OkHttp——连接池管理（6）](https://blog.csdn.net/m0_37884977/article/details/100848687)
-
+1. A1: 
 #### [Q] LruCache数据结构和自定义实现
-1. A1: LruCache最简单即使用链表数据结构。将最新使用的数据放到队列头最晚使用的放到队列尾巴。内存到达阈值从尾巴删除。
-2. A2: android.util包中已经提供了LruCache的实现。
+1. A1:
 #### [Q] (Glide)BitmapPool结构以及复用原理
 1. A1: BitmapPool指的[com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool](https://github.com/bumptech/glide/blob/master/library/src/main/java/com/bumptech/glide/load/engine/bitmap_recycle/BitmapPool.java),具体实现实现为：LruBitmapPool。
 2. A2: BitmapPool定义如下接口
@@ -446,17 +439,6 @@
 | getDirty          | 从缓存中直接获取指定尺寸对象       | 若获取不到就创建 |
 | clearMemory       | 清理所有缓存                       | ---              |
 | tirmMemory        | 根据回收等级 清理内存              | ---              |
-
-LruBitmapPool的缓存策略,由 LruPoolStrategy接口实现，分为SizeConfigStrategy/AttributeStrategy/SizeStrategy实现。
-这些类区别是生成LinkHashMap的Key生成方式不一样，分为是空间大小+config/属性绝对匹配/空间大小重新分配匹配
-| 策略|Key生成|备注|
----|---|---
-AttributeStrategy|宽高+config|绝对匹配|
-SizeStrategy|占用空间|匹配空间+重新配置|
-SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
----|---|---
-
-针对于LRU算法的实现，实际是通过GroupedLinkedMap,本质就是将最新使用的放到链表头，将最低频放的放到链表尾巴，回收时回收尾巴。
 
 #### [Q] 如何提升Activity开启速度
 1. A1: [提升进入界面的速度](https://zmywly8866.github.io/2015/09/28/promote-enter-activity-speed.html)
@@ -480,9 +462,18 @@ SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
 #### [Q] ThreadLocal原理，实现及如何保证Local属性？
 1. A1: 问题搜索N篇都是这老哥答案。[ThreadLocal原理，实现及如何保证Local属性](https://blog.csdn.net/github_37130188/article/details/89483246)
 
+#### [Q] ThreadLocal的ThreadLocalMap和WeakHashMap对比
+1. A1:ThreadLocal由内部的ThreadLocalMap存储。Key为ThreadLocal；Value为保存的值，对比如下
+
+
+| ---      | ThreadLocalMap | WeakHashMap |
+| -------- | -------------- | ----------- |
+| 对象持有 | 弱引用         | 弱引用      |
+
+
+
 #### [Q] 请解释下在单线程模型中Message、Handler、Message Queue、Looper之间的关系
 1. A1: 了解下Handler机制即可[Message、Handler、Message Queue、Looper之间的关系](https://www.jianshu.com/p/352877cd61c1)
-
 #### [Q] 请描述一下View事件传递分发机制 Touch事件传递流程
 1. A1: [Android事件分发机制](http://gityuan.com/2015/09/19/android-touch/)
 2. A2: [Android事件分发机制——从基础深入源码解析](https://www.jianshu.com/p/e6ceb7f767d8)
@@ -1066,6 +1057,12 @@ SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
 #### [Q] RecyclerView 的adapter属于MVP那一层。
 #### [Q] MVC/MVP/MVVM对比，结合场景谈谈你的思考
 
+#### [Q] @TargetApi,@RequiresApi,@SuppressLint区别
+1. A1: 这三个都是面向Lint的。代码运行该崩还是会崩。
+    + @TargetApi:声明代码指向哪个版本的API，不关心build.gradle指定的版本,用了压制警告，但实际低版本运行会报错。
+    + @RequiresApi:声明代码需要哪个版本的API才能运行。常见如6.0权限相关的。
+    + @SuppressLint：忽略Lint提示的黄色警告⚠。
+
 </details>
 
 ### 数据结构和算法
@@ -1100,8 +1097,8 @@ SizeConfigStrategy|宽高+占用空间|匹配空间和config+重新配置|
 2. A2: 蒙特卡洛算法
     1. [蒙特卡罗算法是什么？](https://www.zhihu.com/question/20254139)
 
-#### [Q] 稀疏数组不使用map实现O(1)复杂度元素查找
-1. A1: 二分查找，遇到空"",向左向右调整边界。
+#### [Q] 系数数组,不使用map实现O(1)复杂度元素查找
+    
 #### [Q] 子串包含问题(KMP 算法)写代码实现
 #### [Q] 一个无序，不重复数组，输出N个元素，使得N个元素的和相加为M，给出时间复杂度、空间复杂度。手写算法
 #### [Q] 万亿级别的两个URL文件A和B，如何求出A和B的差集C(提示：Bit映射->hash分组->多文件读写效率->磁盘寻址以及应用层面对寻址的优#### [Q] 化)
