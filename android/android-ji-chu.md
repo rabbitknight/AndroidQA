@@ -9,7 +9,6 @@ description: 此章节主要为Android基础
 对于基础的定义：**使用**时的区别，不求甚解
 
 ### 清单
-
 #### [Q] 四大组件是什么
 1. A1: Acitivity、Service、Broadcast、ContentProvider
 2. A2: [「Android」四大组件，你真的都掌握了？ - 掘金](https://juejin.im/post/5db12d926fb9a0205e766cc2)

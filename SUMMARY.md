@@ -13,8 +13,8 @@
 * [LeetCode](leetcode/leetcode.md)
 
 ## Android
-* [Android 基础](android/java-ji-chu.md)
-* [Android 集合](android/java-ji-he.md)
+* [Android 基础](android/android-ji-chu.md)
+* [Android 集合](android/android-ji-he.md)
 * [Android View视图](android/android-view.md)
 * [Android 多线程](android/android-muti-thread.md)
 * [Android I/O](android/android-io.md)
