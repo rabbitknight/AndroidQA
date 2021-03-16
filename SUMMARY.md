@@ -9,9 +9,6 @@
 * [Java I/O](java/java-io.md)
 * [Java JVM虚拟机](java/java-jvm.md)
 
-## LeetCode
-* [LeetCode](leetcode/leetcode.md)
-
 ## Android
 * [Android 基础](android/android-ji-chu.md)
 * [Android 集合](android/android-ji-he.md)
@@ -27,4 +24,7 @@
 * [Kotlin](others/kotlin.md)
 * [音视频](others/yin-shi-pin.md)
 * [论坛&博客](others/lun-tan-bo-ke.md)
+
+## LeetCode
+* [LeetCode](leetcode/leetcode.md)
 
