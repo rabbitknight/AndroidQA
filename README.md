@@ -154,9 +154,24 @@
     + CachedThreadPool
     + blockingQueue
 
-####  ClassLoader.loadClass()与Class.forName()区别?
+#### [Q]ClassLoader.loadClass()与Class.forName()区别?
 1. A1: Class.forName加载类是将类进了初始化，而ClassLoader的loadClass并没有对类进行初始化，只是把类加载到了虚拟机中
 2. A2: [Class.forName和ClassLoader区别](https://mp.weixin.qq.com/s/g5DLNzLSMAmdIIo4dwcpdA)
+
+#### [Q] Java，栈内存堆内存理解？栈如何转为堆
+1. A1 [【JVM】对象并不一定都是在堆上分配内存的（JIT、逃逸分析）](https://blog.csdn.net/l18848956739/article/details/98853958)
+
+#### [Q] Android硬件加速
+1. [Android硬件加速原理与实现简介---美团技术团队](https://tech.meituan.com/2017/01/19/hardware-accelerate.html)
+
+| 渲染场景 | 纯软件绘制 | 硬件加速 | 加速效果分析 |
+| ---|---|---|---|
+| 页面初始化 | 绘制所有View | 创建所有DisplayList | GPU分担了复杂计算任务 |
+| 在一个复杂页面调用背景透明TextView的setText()，且调用后其尺寸位置不变 | 重绘脏区所有View | TextView及每一级父View重建DisplayList | 重叠的兄弟节点不需CPU重绘，GPU会自行处理 |
+| TextView逐帧播放Alpha / Translation / Scale动画 | 每帧都要重绘脏区所有View | 除第一帧同场景2，之后每帧只更新TextView对应RenderNode的属性 | 刷新一帧性能极大提高，动画流畅度提高 |
+| 修改TextView透明度 | 重绘脏区所有View | 直接调用RenderNode.setAlpha()更新 | 加速前需全页面遍历，并重绘很多View；加速后只触发DecorView.updateDisplayListIfDirty，不再往下遍历，CPU执行时间可忽略不计 |
+
+
 </details>
 
 ### Android相关
@@ -419,6 +434,13 @@
 1. A1: [Android消息分发及多线程切换之Handler、Message的细枝末节（二）](https://www.jianshu.com/p/a842b8d815d8)
 2. A2: [通过学习Handler源码，手写子线程间的通信](https://mp.weixin.qq.com/s?__biz=MzU3NzQ0MzYxMg==&mid=2247483708&idx=1&sn=e81d8d4e2d920fa783e6ec686937bd38&chksm=fd05c34fca724a59471a26d9f037b6423684f2c2a5a6cc5ef8907712aa67c167fbbb95f92bf4&mpshare=1&scene=1&srcid=&sharer_sharetime=1585648474813&sharer_shareid=faa5430ddf8e3a72161f970023d7de03&key=c967bf038ee4b9073471d47fe0e3a2112403c9db6c3abde3ccab1da023b98e659ee50b048d7a1bdd2054ec6a2923e64c4030fef68e356d7892556383484cc7def9195b428f5bcd4cc94926373ee39229&ascene=1&uin=MTEyNTM1NjEzMg%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A7sKMq1ne1EDaEr9Dl%2BPU%2BE%3D&pass_ticket=0iku%2FkvhX9MVQv2%2BuLZfzJxteUkt0ZTaaOrk980uVza4MYxtH7%2F4MaLhB5Ke6loV)
 
+#### [Q] Handler#postDelay实现原理
+1. A1. 源码参考[frameworks/base/core/java/android/os/Handler.java](https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/os/Handler.java;drc=master;l=719?q=Handler.java)
+2. A2: Runnable最后都会被转为Message对象。
+    + #postDelay方法最终转成调用#sendMessageAtTime，Time指的就是当前的时间+Delay的时间。
+    + MessageQueue#enqueueMessage方法指定一个唤醒时间。入队时，根据唤醒时间插入相应位置。
+    + 在MessageQueue#next方法中，死循环获取下一个Message。
+    + 根据最后一个msg计算阻塞等待时间 nextPollTimeoutMillis，直到 nextPollTimeoutMillis唤醒再取Message完成延迟消息。
 #### [Q] OkHttp缓存机制
 1. A1: [OKHttp全解析系列（五） --OKHttp的缓存机制](https://www.jianshu.com/p/fb81207af121)
 
