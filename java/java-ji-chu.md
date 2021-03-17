@@ -16,6 +16,9 @@ description: 此章节主要为纯Java基础
 
 #### [Q] int与integer的区别
 
+#### [Q] String 如何转Int类型
+
+
 #### [Q] 谈谈对java多态的理解
 
 #### [Q] String、StringBuffer、StringBuilder区别
