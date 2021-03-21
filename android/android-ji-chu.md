@@ -159,6 +159,9 @@ description: 此章节主要为Android基础
     + @RequiresApi:声明代码需要哪个版本的API才能运行。常见如6.0权限相关的。
     + @SuppressLint：忽略Lint提示的黄色警告⚠。
 
+#### [Q] SP commit 和 apply区别
+1. A1: [sp commit apply 区别](https://www.jianshu.com/p/2e09da9d68fe)
+
 
 
 

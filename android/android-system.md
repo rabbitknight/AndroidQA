@@ -154,7 +154,7 @@ description: 此章节主要为Android 系统原理相关
 #### [Q] 项目组件化的理解
 1. A1: [谈谈我的理解-组件化/模块化](https://www.jianshu.com/p/79e4df63f31f)
 
-#### [Q] 描述清点击 Android Studio 的 build 按钮后发生了什么
+#### [Q] 描述清点击 Android Studio 的 build 按钮后发生了什么、 Android Apk的构建流程
 1. A1: [在 AndroidStudio 工程点击 Run 按钮， 实际上做了什么操作呢？](https://www.zhihu.com/question/65289196)
 2. A2: [10分钟了解Android项目构建流程](https://juejin.im/post/5a69c0ccf265da3e2a0dc9aa)
 

@@ -19,3 +19,6 @@ description: 此章节主要为Java容器相关
 #### HashMap、ConcurrentHashMap、HashTable区别
 1. [HashMap、ConcurrentHashMap、HashTable的区别](https://www.jianshu.com/p/c00308c32de4)
 
+#### [Q] 删除List中的Target
+1. A1: 避免在for循环中使用remove直接删除
+2. A2: [java 中删除list元素的四种方法(remove)](https://blog.csdn.net/qq_36412715/article/details/84071160)

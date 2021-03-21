@@ -92,3 +92,11 @@ description: 此章节主要为Java多线程相关
     + CountDownLatch
     + CachedThreadPool
     + blockingQueue
+
+#### [Q] Java Condition 是啥
+1. A1: Conditio类，类似Object的wait/notify机制[java condition使用及分析
+](https://blog.csdn.net/bohu83/article/details/51098106#:~:text=Condition%E6%98%AF%E5%9C%A8java%201.5,%E5%8D%8F%E4%BD%9C%E6%9B%B4%E5%8A%A0%E5%AE%89%E5%85%A8%E5%92%8C%E9%AB%98%E6%95%88%E3%80%82)
+
+#### [Q] Java Semphore使用场景
+1. A1: 限制并发总数,获取到信号量的才能执行。可用于限制最大并发数量
+2. A2: acquire/release [Semaphore 使用详解](https://www.jianshu.com/p/38630b7dbe73)

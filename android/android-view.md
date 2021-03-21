@@ -25,6 +25,11 @@ all about view.
 #### [Q] ListView重用的是什么？
 1. A1: [ListView复用和优化详解](https://blog.csdn.net/u011692041/article/details/53099584)
 2. A2: [Android ListView工作原理完全解析，带你从源码的角度彻底理解](https://blog.csdn.net/guolin_blog/article/details/44996879)
+#### [Q] RecyclerView局部刷新原理
+1. A1: [Android RecyclerView 局部刷新原理](https://juejin.cn/post/6844903817130016782)
+
+#### [Q] RecyclerView滑动/手势事件分发机制
+1. A1: [Android手势分发和嵌套滚动机制](https://www.jianshu.com/p/490659fae773)
 
 #### [Q] ListView 中图片错位的问题是如何产生的?ListView图片加载错乱的原理和解决方案
 1. A1: [Android ListView异步加载图片乱序问题，原因分析及解决方案](https://blog.csdn.net/guolin_blog/article/details/45586553)
@@ -98,7 +103,8 @@ all about view.
 1. A1: [View & ViewGroup 之 事件分发](https://blog.csdn.net/crazy1235/article/details/70767884)
 2. A2: [View和ViewGroup分别有哪些事件分发相关的回调方法](https://blog.csdn.net/github_37130188/article/details/89112835)
 
-
+#### [Q] 滑动事件怎么分发DOWN->MOVE->UP/CANCEL
+1. A1: [Android手势分发和嵌套滚动机制](https://www.jianshu.com/p/490659fae773)
 
 #### [Q] View绘制流程
 1. A1: [深入理解Android之View的绘制流程](https://www.jianshu.com/p/060b5f68da79)

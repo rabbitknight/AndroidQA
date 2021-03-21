@@ -11,6 +11,9 @@ description: 此章节主要为 算法相关
 #### [Q] 如何判断链表有回环
 1. [为什么用快慢指针找链表的环，快指针和慢指针一定会相遇？](https://www.zhihu.com/question/23208893)
 
+#### [Q] 删除有序链表中的重复元素
+1. A1: [LeetCode 83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+
 #### [Q] 常用排序算法; 排序算法有哪些;手写一个冒泡排序;手写快速排序代码;快速排序的过程、时间复杂度、空间复杂度;手写堆排序;堆排序过程、时间复杂度及空间复杂度 ;写出你所知道的排序算法及时空复杂度，稳定性
 1. A1: [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
 2. A2: [[算法总结] 十大排序算法](https://zhuanlan.zhihu.com/p/42586566)
@@ -26,7 +29,7 @@ description: 此章节主要为 算法相关
 1. A0: 二叉树遍历+通过根节点获取路径
 
 #### [Q] 给阿里2万多名员工按年龄排序应该选择哪个算法？
-1. A1: 直接计数排序[对公司几万名员工按年龄排序（时间复杂度为O(N)）](https://blog.csdn.net/dai_wen/article/details/79961168)
+1. A1: 直接计数排序[对公司几万名员工按年龄排序（时间复杂度为O(N)）](https://blog.csdn.net/dai_wen/article/details/79961168) 
 
 #### [Q] 蚁群算法与蒙特卡洛算法
 0. A0: 这似乎难度有点高
@@ -59,4 +62,10 @@ ANSWER:
 #### [Q] 时针走一圈，时针分针重合几次
 #### [Q] N*N的方格纸,里面有多少个正方形
 #### [Q] x个苹果，一天只能吃一个、两个、或者三个，问多少天可以吃完？
+#### [Q] 写一个算法计算N的阶乘末尾为0的个数
+1. A1: (LeetCode 172. 阶乘后的零)[https://leetcode-cn.com/problems/factorial-trailing-zeroes/]
+2. A2: 计算"5"的个数就可以。
+
+#### [Q] [4,3,1,4,5,2,3]每一个元素代表不同柱子高度，现在往这些柱子里面放一些球（直径1），求最终有多少球落在柱子中间。
+1. [面试题 17.21. 直方图的水量](https://leetcode-cn.com/problems/volume-of-histogram-lcci/)/[42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
 
