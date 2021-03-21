@@ -10,9 +10,6 @@ Android常用三方库
 
 ### 清单
 
-
-### 清单
-
 #### [Q] 网络框架对比和源码分析
 1. A1: [网络框架分析 - 全是套路 | 掘金技术征文](https://juejin.im/entry/585279ac61ff4b006844f829)
 2. A2: [okhttp,retrofit,android-async-http,volley应该选择哪一个？](https://www.zhihu.com/question/35189851)

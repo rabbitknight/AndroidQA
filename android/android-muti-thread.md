@@ -10,10 +10,6 @@ description: 此章节主要为Android多线程相关
 
 ### 清单
 
-
-### 清单
-
-
 #### [Q] 谈谈多线程在Android中的使用
 1. A1: Android特有
     + AsyncTask
