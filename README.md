@@ -4,7 +4,9 @@ description: 本仓库以Q/A形式收集和整理Android相关问题，涵盖面
 
 # AndroidQA
 
-### TL;DR
+## TL;DR
+
+> 已使用gitbook重新梳理见:[https://rabbitknight.gitbook.io/androidqa/](https://rabbitknight.gitbook.io/androidqa/)
 
 1. 顶层一共分为4大类，Java相关、Android相关、数据结构和算法、其他
 2. 尽量不推荐直接告诉答案\(除非很简单\)，尽可能收集相关文档
